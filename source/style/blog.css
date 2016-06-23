@@ -1,0 +1,81 @@
+body {
+  height: 100%;
+  background: none;
+  margin: 0; }
+
+.wrapper {
+  background: url("../img/back.png") no-repeat;
+  background-size: 100% 522px;
+  z-index: 10000; }
+
+.promo {
+  color: white; }
+  .promo .box {
+    height: 120px;
+    margin: 0 auto 0 auto;
+    z-index: 10000; }
+  .promo .triangle {
+    fill: #faf8f0; }
+  .promo .blog-header:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .promo .blog-header .social-btns {
+    margin-bottom: 38px;
+    float: left; }
+    .promo .blog-header .social-btns a {
+      margin-right: 20px; }
+      .promo .blog-header .social-btns a i.fa-vk,
+      .promo .blog-header .social-btns a i.fa-github-alt,
+      .promo .blog-header .social-btns a i.fa-linkedin {
+        color: white;
+        font-size: 28px;
+        line-height: 28px; }
+  .promo .avatar-block {
+    text-align: center; }
+    .promo .avatar-block .photo {
+      border-radius: 50%;
+      width: 145px;
+      height: 145px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .promo .avatar-block .name {
+      font-size: 63px;
+      line-height: 63px;
+      margin-top: 0;
+      color: white; }
+    .promo .avatar-block .horizontal-line {
+      background-color: white;
+      border: none;
+      width: 90px;
+      height: 3px;
+      margin-bottom: 30px; }
+    .promo .avatar-block .sitetitle {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 0; }
+
+.blog {
+  background-color: #faf8f0;
+  height: 100%; }
+  .blog .blog-menu {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%; }
+    .blog .blog-menu li {
+      list-style: none; }
+  .blog .blog-content {
+    width: 79%;
+    display: inline-block; }
+    .blog .blog-content li {
+      list-style: none; }
+      .blog .blog-content li h2 {
+        margin-bottom: 25px; }
+      .blog .blog-content li .date {
+        margin: 0;
+        margin-bottom: 30px;
+        color: #a2be92; }
+      .blog .blog-content li .blog-content-text {
+        margin: 0; }
+
+/*# sourceMappingURL=blog.css.map */
