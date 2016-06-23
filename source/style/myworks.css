@@ -1,0 +1,274 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background: none;
+  margin: 0; }
+
+.wrapper {
+  background: url("../img/back.png") no-repeat;
+  background-size: 100% 600px;
+  z-index: 10000; }
+
+.promo {
+  background-size: 100% 600px;
+  margin-bottom: 0;
+  color: white; }
+  .promo .box {
+    margin: 158px auto 25px auto;
+    z-index: 10000; }
+  .promo .triangle {
+    fill: white; }
+  .promo .myworks-header:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .promo .myworks-header .social-btns {
+    margin-bottom: 38px;
+    float: left; }
+    .promo .myworks-header .social-btns a {
+      margin-right: 20px; }
+      .promo .myworks-header .social-btns a i.fa-vk,
+      .promo .myworks-header .social-btns a i.fa-github-alt,
+      .promo .myworks-header .social-btns a i.fa-linkedin {
+        color: white;
+        font-size: 28px;
+        line-height: 28px; }
+  .promo .avatar-block {
+    text-align: center; }
+    .promo .avatar-block .photo {
+      border-radius: 50%;
+      width: 145px;
+      height: 145px;
+      margin-top: 40px;
+      margin-bottom: 15px; }
+    .promo .avatar-block .name {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 10px;
+      margin-top: 0; }
+    .promo .avatar-block .sitetitle {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 0;
+      margin-bottom: 30px; }
+
+.content {
+  background-image: url("../img/form_back.png");
+  background-position: 0 -600px; }
+  .content:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .content .page-title {
+    text-align: center;
+    font-size: 63px;
+    line-height: 63px; }
+  .content .horizontal-line {
+    border: none;
+    background-color: black;
+    width: 90px;
+    height: 3px;
+    margin-bottom: 36px; }
+  .content .works-block {
+    height: 750px;
+    margin-bottom: 75px; }
+    .content .works-block:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    .content .works-block .description {
+      float: left;
+      display: inline-block;
+      width: 50%;
+      background-color: #ebefe2; }
+      .content .works-block .description .description-inner {
+        margin-top: 38%;
+        margin-bottom: 37%;
+        height: 100%; }
+        .content .works-block .description .description-inner .work-title {
+          width: 360px;
+          margin: 0 auto;
+          margin-bottom: 30px;
+          font-size: 35px;
+          line-height: 35px;
+          text-align: center;
+          color: #566358; }
+        .content .works-block .description .description-inner .horizontal-line {
+          background-color: #566358;
+          margin-bottom: 25px; }
+        .content .works-block .description .description-inner .work-description {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 20px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #6c9c5a; }
+        .content .works-block .description .description-inner .work-site {
+          display: block;
+          background-image: url("../img/link.png");
+          background-repeat: no-repeat;
+          background-position: 15px 12px;
+          text-align: center;
+          width: 160px;
+          padding: 14px 20px 14px 30px;
+          margin: 0 auto;
+          border-radius: 20px;
+          font-size: 16px;
+          line-height: 16px;
+          color: white;
+          text-decoration: none;
+          background-color: #6c9c5a; }
+    .content .works-block .presentation {
+      float: left;
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      background-color: #e1e4d7; }
+      .content .works-block .presentation .presentation-inner {
+        margin-top: 40%;
+        margin-bottom: 40%;
+        height: 100%; }
+  .content .aboutme-block {
+    width: 41.6%;
+    margin: 0 auto 25px auto; }
+    .content .aboutme-block:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    .content .aboutme-block .aboutme-title {
+      width: 500px;
+      font-size: 50px;
+      margin: 0 auto;
+      text-align: center;
+      text-transform: uppercase; }
+    .content .aboutme-block .aboutme-people {
+      display: inline;
+      margin-bottom: 70px; }
+      .content .aboutme-block .aboutme-people:after {
+        display: table;
+        clear: both;
+        content: ""; }
+      .content .aboutme-block .aboutme-people .aboutme-people-left {
+        float: left;
+        width: 49%;
+        text-align: center; }
+      .content .aboutme-block .aboutme-people .aboutme-people-right {
+        float: right;
+        width: 49%;
+        text-align: center; }
+  .content .contact-form .contact-form-inner {
+    padding-top: 40px;
+    text-align: center;
+    margin: 0 auto 100px auto;
+    width: 385px;
+    height: 465px;
+    border-radius: 5px;
+    background-color: rgba(232, 232, 238, 0.6); }
+    .content .contact-form .contact-form-inner .contact-form-title {
+      text-transform: uppercase;
+      margin: 0 auto;
+      text-align: center;
+      color: #566358; }
+      .content .contact-form .contact-form-inner .contact-form-title .horizontal-line {
+        margin-bottom: 30px;
+        margin-top: 30px; }
+    .content .contact-form .contact-form-inner .contact-form-name,
+    .content .contact-form .contact-form-inner .contact-form-email {
+      width: 325px;
+      height: 45px;
+      border-radius: 20px;
+      border: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding-left: 20px; }
+    .content .contact-form .contact-form-inner .contact-form-somewords {
+      width: 325px;
+      height: 170px;
+      border-radius: 20px;
+      border: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      vertical-align: top; }
+    .content .contact-form .contact-form-inner .send-btn {
+      display: inline-block;
+      color: white;
+      width: 194px;
+      text-decoration: none;
+      vertical-align: middle;
+      height: 50px;
+      box-sizing: border-box;
+      border-right: 3px solid rgba(195, 197, 171, 0.5);
+      background-color: rgba(96, 142, 84, 0.6);
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 16px;
+      border-bottom-left-radius: 5px; }
+    .content .contact-form .contact-form-inner .clear-btn {
+      display: inline-block;
+      color: white;
+      width: 191px;
+      text-decoration: none;
+      vertical-align: middle;
+      height: 50px;
+      box-sizing: border-box;
+      background-color: rgba(96, 142, 84, 0.85);
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 16px;
+      border-right: none;
+      border-bottom-right-radius: 5px; }
+
+.footer-template {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 50px;
+  color: white;
+  background-color: rgba(54, 61, 64, 0.6); }
+  .footer-template .left-part,
+  .footer-template .right-part,
+  .footer-template .center-part {
+    width: 33.2%;
+    display: inline-block;
+    border-right: 1px solid grey;
+    box-sizing: border-box;
+    margin-left: -2px;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 16px; }
+  .footer-template .center-part .nav-menu {
+    padding-left: 0; }
+  .footer-template .center-part .social-btns {
+    margin-bottom: 38px;
+    float: left; }
+    .footer-template .center-part .social-btns a {
+      margin-right: 20px; }
+      .footer-template .center-part .social-btns a i.fa-vk,
+      .footer-template .center-part .social-btns a i.fa-github-alt,
+      .footer-template .center-part .social-btns a i.fa-linkedin {
+        color: white;
+        font-size: 28px;
+        line-height: 28px; }
+  .footer-template .right-part {
+    border-right: none; }
+  .footer-template .nav-menu {
+    list-style: none; }
+    .footer-template .nav-menu li {
+      display: inline; }
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  margin-top: 200px;
+  text-align: center; }
+
+/*# sourceMappingURL=myworks.css.map */

@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport",content="width=device-width")
+  link(href="assets/css/normalize.css", rel="stylesheet")
+  link(href="assets/css/main.css", rel="stylesheet")
+  link(href="assets/css/myworks.css", rel="stylesheet")
+  link(href="assets/css/font-awesome.css", rel="stylesheet")
+body
+  .wrapper
+    .promo
+      header.myworks-header
+        .social-btns
+          a.vk(href="#")
+            i.fa.fa-vk(aria-hidden="true")
+          a.git(href="#")
+            i.fa.fa-github-alt(aria-hidden="true")
+          a.in(href="#")
+            i.fa.fa-linkedin(aria-hidden="true")
+      .avatar-block
+        img.photo(src="#", alt="Logo")
+        p.name Александр Прикотов
+        p.sitetitle Личный сайт веб-разработчика
+      .box
+        svg.triangle(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none")
+          polygon(points="0,0   0,86   500.8,86   500.8,75.5")
+          polygon(points="1000,0   1000,86   500,86   500,75.5")
+    .content
+      h1.page-title Мои работы
+      hr.horizontal-line
+      .works-block
+        .description
+          .description-inner
+            p.work-title Сайт школы онлайн образования
+            hr.horizontal-line
+            p.work-description html, css, javascript
+            a.work-site(href='#') Посмотреть сайт
+        .presentation
+          .presentation-inner
+      .aboutme-block
+        h1.aboutme-title Что обо мне говорят
+          hr.horizontal-line
+        .aboutme-people
+          .aboutme-people-left
+            img.aboutme-people-img(src='assets/img/dima.png', alt='Dima Avatar')
+            p.aboutme-people-quote Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, mollitia!
+            p.aboutme-people-who Дмитрий Ковальчук
+            p.aboutme-people-whois - основатель LoftSchool
+          .aboutme-people-right
+            img.aboutme-people-img(src='assets/img/zar.png', alt='Zar Avatar')
+            p.aboutme-people-quote Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, mollitia!
+            p.aboutme-people-who Зар Захаров
+            p.aboutme-people-whois - главный преподаватель LoftSchool
+      .contact-form
+        .contact-form-inner
+          h2.contact-form-title Связаться со мной
+            hr.horizontal-line
+          input.contact-form-name(type='text', placeholder='Имя')
+          input.contact-form-email(type='email', placeholder='Email')
+          input.contact-form-somewords(type='textarea', rowspan='6', placeholder='Ваше сообщение')
+          .contact-form-btns
+            a.send-btn(href='#') Отправить
+            a.clear-btn(href='#') Очистить
+    .footer-template
+      .left-part
+        p.i-did Это я сделал в рамках обучения в LoftSchool"
+      .center-part
+        ul.nav-menu
+          li Мои работы
+          li Обо мне
+          li Блог
+          li Авторизация
+
+        .social-btns
+          a.vk(href="#")
+            i.fa.fa-vk(aria-hidden="true")
+          a.git(href="#")
+            i.fa.fa-github-alt(aria-hidden="true")
+          a.in(href="#")
+            i.fa.fa-linkedin(aria-hidden="true")
+      .right-part
+        p.quote Lal lal la la la l alldlkjk dkdk ljljs sjhdshd
+          span
+            | - Who say
+    footer.copyright Сделано с любовью
