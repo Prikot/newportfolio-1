@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport",content="width=device-width")
+  link(href="assets/css/normalize.css", rel="stylesheet")
+  link(href="assets/css/main.css", rel="stylesheet")
+  link(href="assets/css/myworks.css", rel="stylesheet")
+  link(href="assets/css/font-awesome.css", rel="stylesheet")
+body
+  .wrapper
+    .promo
+      header.myworks-header
+        .social-btns
+          a.vk(href="#")
+            i.fa.fa-vk(aria-hidden="true")
+          a.git(href="#")
+            i.fa.fa-github-alt(aria-hidden="true")
+          a.in(href="#")
+            i.fa.fa-linkedin(aria-hidden="true")
+      .avatar-block
+        img.photo(src="#", alt="Logo")
+        p.name Александр Прикотов
+        p.sitetitle Личный сайт веб-разработчика
+      .box
+        svg.triangle(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none")
+          polygon(points="0,0   0,86   500.8,86   500.8,75.5")
+          polygon(points="1000,0   1000,86   500,86   500,75.5")
+    .content
+      .skills
+        .content-left
+          .aboutme-block
+            h1.page-title Обо мне
+              hr.horizontal-line
+          .description-block
+            img(src='#')
+            h2.description-block-title Кто я
+              hr.horizontal-line
+            p.skills-about-me Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi dignissimos distinctio eveniet modi necessitatibus odio pariatur perferendis possimus, reprehenderit sequi similique soluta temporibus ullam velit veritatis voluptas, voluptatibus.
+        .content-right
+          h2.my-skills Чем я могу быть вам полезен
+            hr.horizontal-line
+          p.my-skills-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatibus!
+          h3.skills-frontend Frontend
+          ul.skills-circkles
+            li
+            li
+            li
+          h3.skills-frontend Backend
+          ul.skills-circkles
+            li
+            li
+            li
+            li
+          h3.skills-frontend Workflow
+          ul.skills-circkles
+            li
+            li
+            li
+       .map
