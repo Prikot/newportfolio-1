@@ -1,23 +1,13 @@
-html {
+body {
   height: 100%; }
 
-body {
-  height: 100%;
-  background: none;
-  margin: 0; }
-
-.wrapper {
-  background: url("../img/back.png") no-repeat;
-  background-size: 100% 600px;
-  z-index: 10000; }
-
 .promo {
+  background: url("../img/back.png");
+  background-repeat: no-repeat;
   background-size: 100% 600px;
-  margin-bottom: 0;
   color: white; }
   .promo .box {
-    margin: 158px auto 25px auto;
-    z-index: 10000; }
+    margin: 175px auto 25px auto; }
   .promo .triangle {
     fill: white; }
   .promo .myworks-header:after {
@@ -54,50 +44,50 @@ body {
       margin-top: 0;
       margin-bottom: 30px; }
 
-.content {
+.my-work {
   background-image: url("../img/form_back.png");
-  background-position: 0 -600px; }
-  .content:after {
+  background-position-y: -600px; }
+  .my-work:after {
     display: table;
     clear: both;
     content: ""; }
-  .content .page-title {
+  .my-work .page-title {
     text-align: center;
     font-size: 63px;
     line-height: 63px; }
-  .content .horizontal-line {
+  .my-work .horizontal-line {
     border: none;
     background-color: black;
     width: 90px;
     height: 3px;
     margin-bottom: 36px; }
-  .content .works-block {
+  .my-work .works-block {
     height: 750px;
     margin-bottom: 75px; }
-    .content .works-block:after {
+    .my-work .works-block:after {
       display: table;
       clear: both;
       content: ""; }
-    .content .works-block .description {
+    .my-work .works-block .description {
       float: left;
       position: relative;
       display: inline-block;
       width: 50%;
       min-height: 750px;
       background-color: #ebefe2; }
-      .content .works-block .description .description-inner {
+      .my-work .works-block .description .description-inner {
         position: absolute;
         top: 50%;
         left: 0;
         right: 0;
         bottom: 50%;
         text-align: center; }
-        .content .works-block .description .description-inner:before {
+        .my-work .works-block .description .description-inner:before {
           height: 100%;
           content: "";
           display: inline-block;
           vertical-align: middle; }
-        .content .works-block .description .description-inner .work-title {
+        .my-work .works-block .description .description-inner .work-title {
           width: 360px;
           margin: 0 auto;
           margin-bottom: 30px;
@@ -105,17 +95,17 @@ body {
           line-height: 35px;
           text-align: center;
           color: #566358; }
-        .content .works-block .description .description-inner .horizontal-line {
+        .my-work .works-block .description .description-inner .horizontal-line {
           background-color: #566358;
           margin-bottom: 25px; }
-        .content .works-block .description .description-inner .work-description {
+        .my-work .works-block .description .description-inner .work-description {
           font-size: 16px;
           line-height: 24px;
           margin-bottom: 20px;
           text-align: center;
           text-transform: uppercase;
           color: #6c9c5a; }
-        .content .works-block .description .description-inner .work-site {
+        .my-work .works-block .description .description-inner .work-site {
           display: block;
           background-image: url("../img/link.png");
           background-repeat: no-repeat;
@@ -130,116 +120,164 @@ body {
           color: white;
           text-decoration: none;
           background-color: #6c9c5a; }
-    .content .works-block .presentation {
+    .my-work .works-block .presentation {
       position: relative;
       float: left;
       display: inline-block;
       width: 50%;
       min-height: 750px;
       background-color: #e1e4d7; }
-      .content .works-block .presentation .presentation-inner {
-        position: absolute; }
-  .content .aboutme-block {
-    width: 41.6%;
-    margin: 0 auto 25px auto; }
-    .content .aboutme-block:after {
+      .my-work .works-block .presentation .presentation-inner {
+        position: absolute;
+        width: 100%;
+        padding-top: 65px; }
+        .my-work .works-block .presentation .presentation-inner .big-demo {
+          margin-bottom: 85px; }
+          .my-work .works-block .presentation .presentation-inner .big-demo img {
+            display: block;
+            margin: 0 auto; }
+  .my-work .small-demo {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0; }
+    .my-work .small-demo .arrow {
+      position: absolute;
+      left: 158px;
+      top: -100px; }
+    .my-work .small-demo .small-demo-left {
+      position: relative;
+      width: 50%;
+      display: inline; }
+      .my-work .small-demo .small-demo-left .small-demo-pic {
+        width: 360px; }
+    .my-work .small-demo .small-demo-right {
+      position: relative;
+      width: 50%;
+      display: inline; }
+      .my-work .small-demo .small-demo-right .small-demo-pic {
+        width: 360px; }
+
+.aboutme-block {
+  width: 54%;
+  margin: 0 auto 70px auto; }
+  .aboutme-block:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .aboutme-block .aboutme-title {
+    width: 500px;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase; }
+  .aboutme-block .aboutme-people {
+    display: inline;
+    margin-bottom: 70px; }
+    .aboutme-block .aboutme-people:after {
       display: table;
       clear: both;
       content: ""; }
-    .content .aboutme-block .aboutme-title {
-      width: 500px;
-      font-size: 50px;
-      margin: 0 auto;
-      text-align: center;
-      text-transform: uppercase; }
-    .content .aboutme-block .aboutme-people {
-      display: inline;
-      margin-bottom: 70px; }
-      .content .aboutme-block .aboutme-people:after {
-        display: table;
-        clear: both;
-        content: ""; }
-      .content .aboutme-block .aboutme-people .aboutme-people-left {
-        float: left;
-        width: 49%;
-        text-align: center; }
-      .content .aboutme-block .aboutme-people .aboutme-people-right {
-        float: right;
-        width: 49%;
-        text-align: center; }
-  .content .contact-form .contact-form-inner {
-    padding-top: 40px;
+    .aboutme-block .aboutme-people .aboutme-people-left {
+      float: left;
+      font-size: 16px;
+      line-height: 24px;
+      width: 49%;
+      text-align: center; }
+    .aboutme-block .aboutme-people .aboutme-people-right {
+      font-size: 16px;
+      line-height: 24px;
+      float: right;
+      width: 49%;
+      text-align: center; }
+    .aboutme-block .aboutme-people .aboutme-people-quote {
+      margin-bottom: 25px;
+      font-style: italic;
+      color: #5d5a55; }
+    .aboutme-block .aboutme-people .aboutme-people-who {
+      margin-bottom: 12px;
+      line-height: 16px;
+      color: #4e8839; }
+    .aboutme-block .aboutme-people .aboutme-people-whois {
+      color: #373e42;
+      line-height: 16px; }
+
+.contact-form .contact-form-inner {
+  padding-top: 40px;
+  text-align: center;
+  margin: 0 auto 270px auto;
+  width: 385px;
+  height: 465px;
+  border-radius: 5px;
+  background-color: rgba(232, 232, 238, 0.6); }
+  .contact-form .contact-form-inner .contact-form-title {
+    text-transform: uppercase;
+    margin: 0 auto;
     text-align: center;
-    margin: 0 auto 100px auto;
-    width: 385px;
-    height: 465px;
-    border-radius: 5px;
-    background-color: rgba(232, 232, 238, 0.6); }
-    .content .contact-form .contact-form-inner .contact-form-title {
-      text-transform: uppercase;
-      margin: 0 auto;
-      text-align: center;
-      color: #566358; }
-      .content .contact-form .contact-form-inner .contact-form-title .horizontal-line {
-        margin-bottom: 30px;
-        margin-top: 30px; }
-    .content .contact-form .contact-form-inner .contact-form-name,
-    .content .contact-form .contact-form-inner .contact-form-email {
-      width: 325px;
-      height: 45px;
-      border-radius: 20px;
-      border: none;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      padding-left: 20px; }
-    .content .contact-form .contact-form-inner .contact-form-somewords {
-      width: 325px;
-      height: 170px;
-      border-radius: 20px;
-      border: none;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      padding-left: 20px;
-      vertical-align: top; }
-    .content .contact-form .contact-form-inner .send-btn {
-      display: inline-block;
-      color: white;
-      width: 194px;
-      text-decoration: none;
-      vertical-align: middle;
-      height: 50px;
-      box-sizing: border-box;
-      border-right: 3px solid rgba(195, 197, 171, 0.5);
-      background-color: rgba(96, 142, 84, 0.6);
-      font-size: 16px;
-      text-align: center;
-      vertical-align: middle;
-      padding-top: 16px;
-      border-bottom-left-radius: 5px; }
-    .content .contact-form .contact-form-inner .clear-btn {
-      display: inline-block;
-      color: white;
-      width: 191px;
-      text-decoration: none;
-      vertical-align: middle;
-      height: 50px;
-      box-sizing: border-box;
-      background-color: rgba(96, 142, 84, 0.85);
-      font-size: 16px;
-      text-align: center;
-      vertical-align: middle;
-      padding-top: 16px;
-      border-right: none;
-      border-bottom-right-radius: 5px; }
+    color: #566358; }
+    .contact-form .contact-form-inner .contact-form-title .horizontal-line {
+      margin-bottom: 30px;
+      margin-top: 30px; }
+  .contact-form .contact-form-inner .contact-form-name,
+  .contact-form .contact-form-inner .contact-form-email {
+    width: 325px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px; }
+  .contact-form .contact-form-inner .contact-form-somewords {
+    width: 325px;
+    height: 170px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    vertical-align: top; }
+  .contact-form .contact-form-inner .send-btn {
+    display: inline-block;
+    color: white;
+    width: 194px;
+    text-decoration: none;
+    vertical-align: middle;
+    height: 50px;
+    box-sizing: border-box;
+    border-right: 3px solid rgba(195, 197, 171, 0.5);
+    background-color: rgba(96, 142, 84, 0.6);
+    font-size: 16px;
+    text-align: center;
+    padding-top: 16px;
+    border-bottom-left-radius: 5px; }
+  .contact-form .contact-form-inner .clear-btn {
+    display: inline-block;
+    color: white;
+    width: 191px;
+    text-decoration: none;
+    vertical-align: middle;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: rgba(96, 142, 84, 0.85);
+    font-size: 16px;
+    text-align: center;
+    padding-top: 16px;
+    border-right: none;
+    border-bottom-right-radius: 5px; }
+
+.arrow-up-footer {
+  border: 0;
+  top: -200px;
+  right: -700px;
+  position: relative; }
 
 .footer-template {
   width: 100%;
-  height: 150px;
-  margin-bottom: 50px;
+  height: 190px;
   color: white;
-  background-color: rgba(54, 61, 64, 0.6); }
+  background-color: rgba(54, 61, 64, 0.6);
+  margin-top: -150px; }
   .footer-template .left-part,
   .footer-template .right-part,
   .footer-template .center-part {
@@ -249,6 +287,7 @@ body {
     box-sizing: border-box;
     margin-left: -2px;
     padding-left: 32px;
+    margin-top: 18px;
     font-size: 16px;
     line-height: 16px; }
   .footer-template .center-part .nav-menu {
@@ -274,10 +313,13 @@ body {
 .copyright {
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 40px;
   left: 0;
   bottom: 0;
-  margin-top: 200px;
-  text-align: center; }
+  margin-top: -70px;
+  text-align: center;
+  background-color: rgba(98, 140, 83, 0.85);
+  line-height: 40px;
+  z-index: 10000; }
 
 /*# sourceMappingURL=myworks.css.map */
