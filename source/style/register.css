@@ -19,48 +19,49 @@ header {
     padding: 14px 28px 14px 28px;
     border: 1px solid white; }
 
-.content {
+.hello-form {
+  display: none;
   width: 380px;
   height: 400px;
-  margin: 174px auto 0 auto;
+  margin: 145px auto 0 auto;
   text-align: center;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6); }
-  .content .photo {
+  .hello-form .photo {
     border-radius: 50%;
     width: 145px;
     height: 145px;
     margin-top: 40px;
     margin-bottom: 15px; }
-  .content .name {
+  .hello-form .name {
     color: white;
     font-size: 28px;
     line-height: 28px;
     margin-bottom: 10px;
     margin-top: 0; }
-  .content .sitetitle {
+  .hello-form .sitetitle {
     color: white;
     font-size: 16px;
     line-height: 16px;
     margin-top: 0;
     margin-bottom: 30px; }
-  .content .social-btns {
+  .hello-form .social-btns {
     margin-bottom: 38px; }
-    .content .social-btns a {
+    .hello-form .social-btns a {
       margin-right: 20px; }
-      .content .social-btns a .fa-vk,
-      .content .social-btns a .fa-github-alt,
-      .content .social-btns a .fa-linkedin {
+      .hello-form .social-btns a .fa-vk,
+      .hello-form .social-btns a .fa-github-alt,
+      .hello-form .social-btns a .fa-linkedin {
         color: rgba(141, 155, 150, 0.9);
         font-size: 28px;
         line-height: 28px; }
-  .content .btns {
+  .hello-form .btns {
     height: 50px;
     font-size: 0;
     text-align: left; }
-    .content .btns .myworks,
-    .content .btns .aboutme,
-    .content .btns .blog {
+    .hello-form .btns .myworks,
+    .hello-form .btns .aboutme,
+    .hello-form .btns .blog {
       display: inline-block;
       color: white;
       text-decoration: none;
@@ -73,13 +74,87 @@ header {
       text-align: center;
       vertical-align: middle;
       padding-top: 16px; }
-    .content .btns .blog {
+    .hello-form .btns .blog {
       width: 100px;
       border-right: none; }
-    .content .btns .myworks {
+    .hello-form .btns .myworks {
       width: 150px; }
-    .content .btns .aboutme {
+    .hello-form .btns .aboutme {
       width: 130px; }
+
+.register-form {
+  width: 380px;
+  height: 428px;
+  margin: 145px auto 0 auto;
+  text-align: center;
+  text-align: center;
+  background-color: rgba(31, 52, 48, 0.6); }
+  .register-form .name {
+    padding-top: 40px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 28px;
+    color: white; }
+  .register-form .horizontal-line {
+    border: none;
+    width: 90px;
+    height: 3px;
+    margin-bottom: 30px;
+    background-color: white; }
+  .register-form .register-form-login,
+  .register-form .register-form-pass,
+  .register-form .captcha-question {
+    display: block;
+    font-size: 16px; }
+  .register-form input, .register-form label {
+    font-size: 16px; }
+  .register-form .register-form-login,
+  .register-form .register-form-pass {
+    width: 340px;
+    height: 45px;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 45px;
+    border: none;
+    padding: 0; }
+  .register-form .register-form-login {
+    margin-bottom: 20px; }
+  .register-form .register-form-pass {
+    margin-bottom: 20px; }
+  .register-form label[for='captcha'],
+  .register-form .captcha-question,
+  .register-form input[name='yesno'] {
+    color: white; }
+  .register-form label[for='captcha'] {
+    margin-bottom: 20px; }
+  .register-form .captcha-question {
+    margin-bottom: 20px; }
+  .register-form input[name='yesno'] {
+    margin-bottom: 40px; }
+  .register-form #captcha {
+    margin-bottom: 20px; }
+  .register-form .btns {
+    height: 50px;
+    font-size: 0;
+    text-align: left; }
+    .register-form .btns .main-page-btn,
+    .register-form .btns .sign-in-btn {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      vertical-align: middle;
+      box-sizing: border-box;
+      height: 50px;
+      width: 50%;
+      border-right: 1px solid white;
+      background-color: #608e54;
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 16px; }
+    .register-form .btns .sign-in-btn {
+      border-right: none; }
 
 footer {
   position: absolute;

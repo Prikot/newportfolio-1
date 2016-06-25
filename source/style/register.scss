@@ -23,10 +23,11 @@ header {
   }
 }
 
-.content {
+.hello-form {
+  display: none;
   width: 380px;
   height: 400px;
-  margin: 174px auto 0 auto;
+  margin: 145px auto 0 auto;
   text-align: center;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6);
@@ -104,6 +105,108 @@ header {
       width: 130px;
     }
 
+  }
+}
+
+.register-form {
+  width: 380px;
+  height: 428px;
+  margin: 145px auto 0 auto;
+  text-align: center;
+  text-align: center;
+  background-color: rgba(31, 52, 48, 0.6);
+
+  .name {
+    padding-top: 40px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 28px;
+    color: white;
+
+  }
+  .horizontal-line {
+    border: none;
+    width: 90px;
+    height: 3px;
+    margin-bottom: 30px;
+    background-color: white;
+  }
+
+  .register-form-login,
+  .register-form-pass,
+  .captcha-question {
+    display: block;
+    font-size: 16px;
+  }
+  input, label {
+    font-size: 16px;
+  }
+
+  .register-form-login,
+  .register-form-pass {
+    width: 340px;
+    height: 45px;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 45px;
+    border: none;
+    padding: 0;
+  }
+
+  .register-form-login {
+    margin-bottom: 20px;
+  }
+  .register-form-pass {
+    margin-bottom: 20px;
+  }
+
+  label[for='captcha'],
+  .captcha-question,
+  input[name='yesno'] {
+    color: white;
+  }
+
+  label[for='captcha'] {
+    margin-bottom: 20px;
+  }
+
+  .captcha-question {
+    margin-bottom: 20px;
+  }
+
+  input[name='yesno'] {
+    margin-bottom: 40px;
+  }
+
+  #captcha {
+    margin-bottom: 20px;
+  }
+
+  .btns {
+    height: 50px;
+    font-size: 0;
+    text-align: left;
+
+    .main-page-btn,
+    .sign-in-btn {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      vertical-align: middle;
+      box-sizing: border-box;
+      height: 50px;
+      width: 50%;
+      border-right: 1px solid white;
+      background-color: rgb(96, 142, 84);
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 16px;
+    }
+    .sign-in-btn {
+      border-right: none;
+    }
   }
 }
 

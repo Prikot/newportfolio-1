@@ -12,67 +12,36 @@ body
     a.autorize-btn(href="#") Авторизоваться
   .wrapper
     .content
-      img.photo(src="img/", alt="Logo")
-      p.name Александр Прикотов
-      p.sitetitle Личный сайт веб-разработчика
-      .social-btns
-        a.vk(href="#")
-          i.fa.fa-vk(aria-hidden="true")
-        a.git(href="#")
-          i.fa.fa-github-alt(aria-hidden="true")
-        a.in(href="#")
-          i.fa.fa-linkedin(aria-hidden="true")
-      .btns
-        a.myworks(href="#") Мои работы
-        a.aboutme(href="#") Обо мне
-        a.blog(href="#") Блог
+      .hello-form
+        img.photo(src="img/", alt="Logo")
+        p.name Александр Прикотов
+        p.sitetitle Личный сайт веб-разработчика
+        .social-btns
+          a.vk(href="#")
+            i.fa.fa-vk(aria-hidden="true")
+          a.git(href="#")
+            i.fa.fa-github-alt(aria-hidden="true")
+          a.in(href="#")
+            i.fa.fa-linkedin(aria-hidden="true")
+        .btns
+          a.myworks(href="#") Мои работы
+          a.aboutme(href="#") Обо мне
+          a.blog(href="#") Блог
+      .register-form
+        p.name Авторизуйтесь
+          hr.horizontal-line
+        input.register-form-login(type='text', placeholder='Логин')
+        input.register-form-pass(type='password', placeholder='Пароль')
+        label(for='captcha')
+          input#captcha(type='checkbox')
+          | Я человек
+        p.captcha-question Вы точно не робот?
+        input(type='radio', name='yesno', value='1')
+        | Да
+        input(type='radio', name='yesno', value='0')
+        | Не уверен
+        .btns
+          .main-page-btn На главную
+          .sign-in-btn Войти
   footer
     p.copyright Секретный ингредиент: чуточка любви!
-
-//<body>
-//  <div class="wrapper">
-//
-//    <header>
-//      <a href="#" class="autorize-btn">Авторизоваться</a>
-//    </header>
-//
-//    <div class="content">
-//
-//       <div class="btns">
-//        <a href="#" class="myworks">Мои работы</a>
-//        <a href="#" class="aboutme">Обо мне</a>
-//        <a href="#" class="blog">Блог</a>
-//      </div>
-//    </div>
-//    <div class="register-hidden">
-//      <img class="photo" src="img/" alt="Logo">
-//      <p class="name">Александр Прикотов</p>
-//      <p class="sitetitle">Личный сайт веб-разработчика</p>
-//
-//      <div class="social-btns">
-//        <a href="#" class="vk">
-//          <i class="fa fa-vk" aria-hidden="true"></i>
-//        </a>
-//        <a href="#" class="git">
-//          <i class="fa fa-github-alt" aria-hidden="true"></i>
-//        </a>
-//        <a href="#" class="in">
-//          <i class="fa fa-linkedin" aria-hidden="true"></i>
-//        </a>
-//      </div>
-//
-//       <div class="btns">
-//        <a href="#" class="myworks">Мои работы</a>
-//        <a href="#" class="aboutme">Обо мне</a>
-//        <a href="#" class="blog">Блог</a>
-//      </div>
-//    </div>
-//
-//    <footer>
-//      <p class="copyright">Создано с любовью</p>
-//    </footer>
-//  </div>
-//
-//
-//</body>
-//</html>
