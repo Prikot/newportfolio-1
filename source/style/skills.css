@@ -1,0 +1,203 @@
+body {
+  background-size: 100% 600px; }
+
+.promo {
+  color: white; }
+  .promo .box {
+    margin: 158px auto 25px auto;
+    z-index: 10000; }
+  .promo .triangle {
+    fill: white; }
+  .promo .myworks-header:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .promo .myworks-header .social-btns {
+    margin-bottom: 38px;
+    float: left; }
+    .promo .myworks-header .social-btns a {
+      margin-right: 20px; }
+      .promo .myworks-header .social-btns a i.fa-vk,
+      .promo .myworks-header .social-btns a i.fa-github-alt,
+      .promo .myworks-header .social-btns a i.fa-linkedin {
+        color: white;
+        font-size: 28px;
+        line-height: 28px; }
+  .promo .avatar-block {
+    text-align: center; }
+    .promo .avatar-block .photo {
+      border-radius: 50%;
+      width: 145px;
+      height: 145px;
+      margin-top: 40px;
+      margin-bottom: 15px; }
+    .promo .avatar-block .name {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 10px;
+      margin-top: 0; }
+    .promo .avatar-block .sitetitle {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 0;
+      margin-bottom: 30px; }
+
+.skills {
+  width: 100%; }
+  .skills:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .skills .content-left {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    min-height: 750px;
+    background-color: #ebefe2; }
+    .skills .content-left:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    .skills .content-left .aboutme-block {
+      float: left;
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      min-height: 750px; }
+      .skills .content-left .aboutme-block .page-title {
+        text-align: center;
+        color: #373e42;
+        font-size: 63px;
+        line-height: 63px;
+        background-image: url("../img/about_header_back.png");
+        background-position: 40px -20px;
+        background-size: 80%;
+        background-repeat: no-repeat; }
+    .skills .content-left .description-block {
+      float: left;
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      min-height: 750px; }
+      .skills .content-left .description-block img {
+        margin-top: 15px;
+        width: 100%;
+        height: auto; }
+      .skills .content-left .description-block .description-block-title {
+        text-align: center;
+        font-size: 35px;
+        line-height: 35px;
+        color: #566358; }
+        .skills .content-left .description-block .description-block-title .horizontal-line {
+          background-color: #566358; }
+      .skills .content-left .description-block .skills-about-me {
+        font-size: 16px;
+        line-height: 1.5; }
+  .skills .content-right {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    min-height: 750px;
+    background-color: #f4f5f0; }
+    .skills .content-right .my-skills {
+      text-align: center;
+      font-size: 35px;
+      line-height: 35px;
+      color: #566358; }
+      .skills .content-right .my-skills .horizontal-line {
+        background-color: #566358; }
+    .skills .content-right .my-skills-description {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #566358;
+      text-align: center;
+      padding: 0 20px; }
+    .skills .content-right .skills-frontend {
+      font-size: 28px;
+      line-height: 28px;
+      color: #566358; }
+    .skills .content-right .skills-circkles {
+      list-style: none; }
+      .skills .content-right .skills-circkles li {
+        width: 20%;
+        display: inline; }
+
+.horizontal-line {
+  border: none;
+  width: 90px;
+  height: 3px;
+  margin-bottom: 36px;
+  background-color: #373e42; }
+
+.map {
+  width: 100%;
+  height: 930px; }
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  margin-top: 200px;
+  text-align: center; }
+
+.footer-template {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  width: 100%;
+  height: 150px;
+  color: white;
+  background-color: rgba(54, 61, 64, 0.6); }
+  .footer-template p {
+    margin-top: 0; }
+  .footer-template:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .footer-template .left-part,
+  .footer-template .right-part,
+  .footer-template .center-part {
+    width: 33.2%;
+    display: inline-block;
+    border-right: 1px solid grey;
+    box-sizing: border-box;
+    margin-left: -2px;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 20px; }
+  .footer-template .left-part .i-did {
+    width: 365px; }
+  .footer-template .center-part .nav-menu {
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none; }
+    .footer-template .center-part .nav-menu li {
+      margin-right: 20px;
+      display: inline; }
+      .footer-template .center-part .nav-menu li:last-child {
+        margin-right: 0; }
+  .footer-template .center-part:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .footer-template .center-part .social-btns {
+    float: left; }
+    .footer-template .center-part .social-btns a {
+      margin-right: 20px; }
+      .footer-template .center-part .social-btns a i.fa-vk,
+      .footer-template .center-part .social-btns a i.fa-github-alt,
+      .footer-template .center-part .social-btns a i.fa-linkedin {
+        color: white;
+        font-size: 28px;
+        line-height: 28px; }
+  .footer-template .right-part {
+    border-right: none; }
+    .footer-template .right-part .quote p {
+      margin-top: 0;
+      padding: 0; }
+
+/*# sourceMappingURL=skills.css.map */

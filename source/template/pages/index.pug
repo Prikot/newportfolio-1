@@ -3,14 +3,14 @@ html(lang="en")
 head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width")
-  link(href="css/normalize.css", rel="stylesheet")
-  link(href="css/main.css", rel="stylesheet")
-  link(href="register.css", rel="stylesheet")
-  link(href="css/font-awesome-4.6.3/css/font-awesome.min.css", rel="stylesheet")
+  link(href="assets/css/normalize.css", rel="stylesheet")
+  link(href="assets/css/main.css", rel="stylesheet")
+  link(href="assets/css/register.css", rel="stylesheet")
+  link(href="assets/css/font-awesome-4.6.3/css/font-awesome.min.css", rel="stylesheet")
 body
+  header
+    a.autorize-btn(href="#") Авторизоваться
   .wrapper
-    header
-      a.autorize-btn(href="#") Авторизоваться
     .content
       img.photo(src="img/", alt="Logo")
       p.name Александр Прикотов
@@ -26,8 +26,8 @@ body
         a.myworks(href="#") Мои работы
         a.aboutme(href="#") Обо мне
         a.blog(href="#") Блог
-    footer
-      p.copyright Секретный ингредиент: чуточка любви!
+  footer
+    p.copyright Секретный ингредиент: чуточка любви!
 
 //<body>
 //  <div class="wrapper">

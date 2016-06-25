@@ -2,6 +2,9 @@ html {
   height: 100%;
 }
 
+
+
+
 body {
   height: 100%;
   background: none;
@@ -111,15 +114,26 @@ body {
 
     .description {
       float: left;
+      position: relative;
       display: inline-block;
       width: 50%;
+      min-height: 750px;
       background-color: rgb(235, 239, 226);
 
       .description-inner {
-        margin-top: 38%;
-        margin-bottom: 37%;
-        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        text-align: center;
 
+        &:before {
+          height: 100%;
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+        }
         .work-title {
           width: 360px;
           margin: 0 auto;
@@ -161,21 +175,18 @@ body {
         }
 
       }
-
-
-
     }
     .presentation {
+      position: relative;
       float: left;
       display: inline-block;
       width: 50%;
-      height: 100%;
+      min-height: 750px;
       background-color: rgb(225, 228, 215);
 
       .presentation-inner{
-        margin-top: 40%;
-        margin-bottom: 40%;
-        height: 100%;
+        position: absolute;
+
       }
     }
   }

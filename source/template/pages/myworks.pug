@@ -1,12 +1,6 @@
 doctype html
 html(lang="en")
-head
-  meta(charset="UTF-8")
-  meta(name="viewport",content="width=device-width")
-  link(href="assets/css/normalize.css", rel="stylesheet")
-  link(href="assets/css/main.css", rel="stylesheet")
-  link(href="assets/css/myworks.css", rel="stylesheet")
-  link(href="assets/css/font-awesome.css", rel="stylesheet")
+include ../includes/head.pug
 body
   .wrapper
     .promo
@@ -82,4 +76,4 @@ body
         p.quote Lal lal la la la l alldlkjk dkdk ljljs sjhdshd
           span
             | - Who say
-    footer.copyright Сделано с любовью
+    include ../includes/footer.pug

@@ -5,12 +5,12 @@ head
   meta(name="viewport",content="width=device-width")
   link(href="assets/css/normalize.css", rel="stylesheet")
   link(href="assets/css/main.css", rel="stylesheet")
-  link(href="assets/css/myworks.css", rel="stylesheet")
+  link(href="assets/css/blog.css", rel="stylesheet")
   link(href="assets/css/font-awesome.css", rel="stylesheet")
 body
   .wrapper
     .promo
-      header.myworks-header
+      header.blog-header
         .social-btns
           a.vk(href="#")
             i.fa.fa-vk(aria-hidden="true")
@@ -20,8 +20,9 @@ body
             i.fa.fa-linkedin(aria-hidden="true")
       .avatar-block
         img.photo(src="#", alt="Logo")
-        p.name Александр Прикотов
-        p.sitetitle Личный сайт веб-разработчика
+        h1.name Блог
+          hr.horizontal-line
+        p.sitetitle Статьи, которые я написал
       .box
         svg.triangle(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none")
           polygon(points="0,0   0,86   500.8,86   500.8,75.5")
@@ -30,13 +31,26 @@ body
       .blog
         .blog-menu
           ul.blog-nav
-            li
-            li
-            li
-            li
+            li Первая
+            li Вторая
+            li Третья
+            li Четвертая
         .blog-content
           ul.blog-news
             li
+              h2 Первая
+              p.date 13 января 2013
+              p.blog-content-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti earum eius, harum ipsam itaque minus natus possimus provident recusandae repudiandae saepe sit velit voluptas voluptatibus? Aliquam atque doloribus exercitationem.
             li
+              h2 Вторая
+              p.date 13 января 2013
+              p.blog-content-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti earum eius, harum ipsam itaque minus natus possimus provident recusandae repudiandae saepe sit velit voluptas voluptatibus? Aliquam atque doloribus exercitationem.
+
             li
+              h2 Третья
+              p.date 13 января 2013
+              p.blog-content-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti earum eius, harum ipsam itaque minus natus possimus provident recusandae repudiandae saepe sit velit voluptas voluptatibus? Aliquam atque doloribus exercitationem.
             li
+              h2 Четвертая
+              p.date 13 января 2013
+              p.blog-content-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti earum eius, harum ipsam itaque minus natus possimus provident recusandae repudiandae saepe sit velit voluptas voluptatibus? Aliquam atque doloribus exercitationem.

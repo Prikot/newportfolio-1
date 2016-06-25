@@ -80,13 +80,23 @@ body {
       content: ""; }
     .content .works-block .description {
       float: left;
+      position: relative;
       display: inline-block;
       width: 50%;
+      min-height: 750px;
       background-color: #ebefe2; }
       .content .works-block .description .description-inner {
-        margin-top: 38%;
-        margin-bottom: 37%;
-        height: 100%; }
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        text-align: center; }
+        .content .works-block .description .description-inner:before {
+          height: 100%;
+          content: "";
+          display: inline-block;
+          vertical-align: middle; }
         .content .works-block .description .description-inner .work-title {
           width: 360px;
           margin: 0 auto;
@@ -121,15 +131,14 @@ body {
           text-decoration: none;
           background-color: #6c9c5a; }
     .content .works-block .presentation {
+      position: relative;
       float: left;
       display: inline-block;
       width: 50%;
-      height: 100%;
+      min-height: 750px;
       background-color: #e1e4d7; }
       .content .works-block .presentation .presentation-inner {
-        margin-top: 40%;
-        margin-bottom: 40%;
-        height: 100%; }
+        position: absolute; }
   .content .aboutme-block {
     width: 41.6%;
     margin: 0 auto 25px auto; }
