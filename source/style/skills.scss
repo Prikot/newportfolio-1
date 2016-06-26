@@ -30,6 +30,8 @@ body {
 
 
   .myworks-header {
+    padding-top: 35px;
+    padding-left: 30px;
     &:after {
       display: table;
       clear: both;
@@ -184,18 +186,15 @@ body {
       color: rgb(86, 99, 88);
     }
     .skills-circles {
-      margin-left: 30px;
+      margin-left: -20px;
       list-style: none;
       .circle-wrap {
         position: relative;
         width: 125px;
         height: 125px;
-        margin-right: 50px;
+        margin-left: 50px;
         display: inline-block;
 
-        &:last-child {
-          margin-right: 0;
-        }
 
         .circle-text {
           width: 100px;

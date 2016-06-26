@@ -16,21 +16,24 @@ body {
     z-index: 10000; }
   .promo .triangle {
     fill: white; }
-  .promo .myworks-header:after {
-    display: table;
-    clear: both;
-    content: ""; }
-  .promo .myworks-header .social-btns {
-    margin-bottom: 38px;
-    float: left; }
-    .promo .myworks-header .social-btns a {
-      margin-right: 20px; }
-      .promo .myworks-header .social-btns a i.fa-vk,
-      .promo .myworks-header .social-btns a i.fa-github-alt,
-      .promo .myworks-header .social-btns a i.fa-linkedin {
-        color: white;
-        font-size: 28px;
-        line-height: 28px; }
+  .promo .myworks-header {
+    padding-top: 35px;
+    padding-left: 30px; }
+    .promo .myworks-header:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    .promo .myworks-header .social-btns {
+      margin-bottom: 38px;
+      float: left; }
+      .promo .myworks-header .social-btns a {
+        margin-right: 20px; }
+        .promo .myworks-header .social-btns a i.fa-vk,
+        .promo .myworks-header .social-btns a i.fa-github-alt,
+        .promo .myworks-header .social-btns a i.fa-linkedin {
+          color: white;
+          font-size: 28px;
+          line-height: 28px; }
   .promo .avatar-block {
     text-align: center; }
     .promo .avatar-block .photo {

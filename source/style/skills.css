@@ -15,21 +15,24 @@ body {
       fill: #ebefe2; }
       .promo .box .triangle polygon:nth-child(2n) {
         fill: #f4f5f0; }
-  .promo .myworks-header:after {
-    display: table;
-    clear: both;
-    content: ""; }
-  .promo .myworks-header .social-btns {
-    margin-bottom: 38px;
-    float: left; }
-    .promo .myworks-header .social-btns a {
-      margin-right: 20px; }
-      .promo .myworks-header .social-btns a i.fa-vk,
-      .promo .myworks-header .social-btns a i.fa-github-alt,
-      .promo .myworks-header .social-btns a i.fa-linkedin {
-        color: white;
-        font-size: 28px;
-        line-height: 28px; }
+  .promo .myworks-header {
+    padding-top: 35px;
+    padding-left: 30px; }
+    .promo .myworks-header:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    .promo .myworks-header .social-btns {
+      margin-bottom: 38px;
+      float: left; }
+      .promo .myworks-header .social-btns a {
+        margin-right: 20px; }
+        .promo .myworks-header .social-btns a i.fa-vk,
+        .promo .myworks-header .social-btns a i.fa-github-alt,
+        .promo .myworks-header .social-btns a i.fa-linkedin {
+          color: white;
+          font-size: 28px;
+          line-height: 28px; }
   .promo .avatar-block {
     text-align: center; }
     .promo .avatar-block .photo {
@@ -128,16 +131,14 @@ body {
       line-height: 28px;
       color: #566358; }
     .skills .content-right .skills-circles {
-      margin-left: 30px;
+      margin-left: -20px;
       list-style: none; }
       .skills .content-right .skills-circles .circle-wrap {
         position: relative;
         width: 125px;
         height: 125px;
-        margin-right: 50px;
+        margin-left: 50px;
         display: inline-block; }
-        .skills .content-right .skills-circles .circle-wrap:last-child {
-          margin-right: 0; }
         .skills .content-right .skills-circles .circle-wrap .circle-text {
           width: 100px;
           height: 50px;
