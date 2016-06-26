@@ -19,10 +19,10 @@ body
           a.in(href="#")
             i.fa.fa-linkedin(aria-hidden="true")
       .avatar-block
-        img.photo(src="#", alt="Logo")
+        img.photo(src="assets/img/fashmark-men-trends-nature.png", alt="Logo")
         p.name Александр Прикотов
         p.sitetitle Личный сайт веб-разработчика
-      image.down-arrow(src="" alt="down-arrow")
+      img.down-arrow(src='assets/img/arrow_down.png', alt='down')
       .box
         svg.triangle(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none")
           polygon(points="0,0   0,86   500.8,86   500.8,75.5")
@@ -34,7 +34,7 @@ body
             h1.page-title Обо мне
               hr.horizontal-line
           .description-block
-            img(src='img/fashmark-men-trends-nature1.png')
+            img(src='assets/img/fashmark-men-trends-nature1.png')
             h2.description-block-title Кто я
               hr.horizontal-line
             p.skills-about-me Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi dignissimos distinctio eveniet modi necessitatibus odio pariatur perferendis possimus, reprehenderit sequi similique soluta temporibus ullam velit veritatis voluptas, voluptatibus.
@@ -43,25 +43,55 @@ body
             hr.horizontal-line
           p.my-skills-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatibus!
           h3.skills-frontend Frontend
-          .skills-circkles
+          .skills-circles
             .circle-wrap
                 svg.circle(width='120' height='120')
                   circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
                   circle(transform='rotate(-90)', style='stroke-dasharray: 250px 314px;', r='50', cx='-60', cy='60')
-            li
-            li
+                span.circle-text HTML5
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 40px 314px;', r='50', cx='-60', cy='60')
+                span.circle-text CSS3
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 200px 314px;', r='50', cx='-60', cy='60')
+                span.circle-text JavaScript&JQuery
           h3.skills-frontend Backend
-          ul.skills-circkles
-            li hfp
-            li df
-            li dfsd
-            li dfs
+          .skills-circles
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 200px 314px;', r='50', cx='-60', cy='60')
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 150px 314px;', r='50', cx='-60', cy='60')
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 100px 314px;', r='50', cx='-60', cy='60')
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 90px 314px;', r='50', cx='-60', cy='60')
           h3.skills-frontend Workflow
-          ul.skills-circkles
-            li
-            li
-            li
-    #map
+          .skills-circles
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 150px 314px;', r='50', cx='-60', cy='60')
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 100px 314px;', r='50', cx='-60', cy='60')
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 90px 314px;', r='50', cx='-60', cy='60')
+      #map
     .footer-template
       .left-part
         p.i-did Это я сделал в рамках обучения в LoftSchool"
@@ -83,6 +113,6 @@ body
           span
             | - Who say
     .copyright Привет
-<script type="text/javascript" src="../source/js/google_maps.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRdSrcRsYDUhxGwIWIo_691ihwrHeRDs&callback=initMap">
+  <script type="text/javascript" src="./source/js/google_maps.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRdSrcRsYDUhxGwIWIo_691ihwrHeRDs&callback=initMap">
 

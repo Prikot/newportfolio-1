@@ -4,10 +4,10 @@ body {
 .promo {
   background: url("../img/back.png");
   background-repeat: no-repeat;
-  background-size: 100% 600px;
+  background-size: 100% 500px;
   color: white; }
   .promo .box {
-    margin: 175px auto 25px auto; }
+    margin: 158px auto 25px auto; }
   .promo .triangle {
     fill: white; }
   .promo .myworks-header:after {
@@ -140,22 +140,28 @@ body {
     width: 100%;
     margin: 0 auto;
     font-size: 0; }
+    .my-work .small-demo:after {
+      display: table;
+      clear: both;
+      content: ""; }
     .my-work .small-demo .arrow {
       position: absolute;
       left: 158px;
-      top: -100px; }
+      top: 65px; }
     .my-work .small-demo .small-demo-left {
       position: relative;
       width: 50%;
-      display: inline; }
+      display: inline;
+      float: left; }
       .my-work .small-demo .small-demo-left .small-demo-pic {
-        width: 360px; }
+        max-width: 100%; }
     .my-work .small-demo .small-demo-right {
       position: relative;
       width: 50%;
-      display: inline; }
+      display: inline;
+      float: left; }
       .my-work .small-demo .small-demo-right .small-demo-pic {
-        width: 360px; }
+        max-width: 100%; }
 
 .aboutme-block {
   width: 54%;

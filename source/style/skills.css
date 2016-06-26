@@ -1,13 +1,20 @@
 body {
-  background-size: 100% 600px; }
+  background-size: 100% 500px; }
 
 .promo {
   color: white; }
+  .promo .down-arrow {
+    display: block;
+    text-align: center;
+    margin: 0 auto; }
   .promo .box {
     margin: 158px auto 25px auto;
-    z-index: 10000; }
-  .promo .triangle {
-    fill: white; }
+    z-index: 10000;
+    height: 90px; }
+    .promo .box .triangle polygon {
+      fill: #ebefe2; }
+      .promo .box .triangle polygon:nth-child(2n) {
+        fill: #f4f5f0; }
   .promo .myworks-header:after {
     display: table;
     clear: both;
@@ -79,9 +86,10 @@ body {
       position: relative;
       display: inline-block;
       width: 50%;
-      min-height: 750px; }
+      min-height: 830px; }
       .skills .content-left .description-block img {
         margin-top: 15px;
+        margin-right: 20px;
         width: 100%;
         height: auto; }
       .skills .content-left .description-block .description-block-title {
@@ -99,7 +107,7 @@ body {
     position: relative;
     display: inline-block;
     width: 50%;
-    min-height: 750px;
+    min-height: 830px;
     background-color: #f4f5f0; }
     .skills .content-right .my-skills {
       text-align: center;
@@ -115,20 +123,40 @@ body {
       text-align: center;
       padding: 0 20px; }
     .skills .content-right .skills-frontend {
+      margin-left: 30px;
       font-size: 28px;
       line-height: 28px;
       color: #566358; }
-    .skills .content-right .skills-circkles {
+    .skills .content-right .skills-circles {
+      margin-left: 30px;
       list-style: none; }
-      .skills .content-right .skills-circkles circle {
+      .skills .content-right .skills-circles .circle-wrap {
+        position: relative;
+        width: 125px;
+        height: 125px;
+        margin-right: 50px;
+        display: inline-block; }
+        .skills .content-right .skills-circles .circle-wrap:last-child {
+          margin-right: 0; }
+        .skills .content-right .skills-circles .circle-wrap .circle-text {
+          width: 100px;
+          height: 50px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          white-space: normal;
+          color: #74a163; }
+      .skills .content-right .skills-circles circle {
         fill: transparent;
         stroke: #dfdcd5;
         stroke-width: 20;
         stroke-dasharray: 314px 314px;
         transition: .8s; }
-      .skills .content-right .skills-circkles circle:nth-child(2n) {
+      .skills .content-right .skills-circles circle:nth-child(2n) {
         fill: transparent;
-        stroke: #10c1a8;
+        stroke: #74a163;
         stroke-width: 20; }
 
 .horizontal-line {

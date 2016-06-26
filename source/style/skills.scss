@@ -1,19 +1,34 @@
 body {
-  background-size: 100% 600px;
+  background-size: 100% 500px;
 }
 
 
 .promo {
   color: white;
+  .down-arrow {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+  }
   .box {
     margin: 158px auto 25px auto;
     z-index: 10000;
+    height: 90px;
 
+    .triangle {
+
+      polygon {
+        fill: rgb(235, 239, 226);
+        &:nth-child(2n) {
+          fill: rgb(244, 245, 240);
+        }
+      }
+
+    }
   }
 
-  .triangle {
-    fill: white;
-  }
+
   .myworks-header {
     &:after {
       display: table;
@@ -111,10 +126,11 @@ body {
       position: relative;
       display: inline-block;
       width: 50%;
-      min-height: 750px;
+      min-height: 830px;
 
       img {
         margin-top: 15px;
+        margin-right: 20px;
         width: 100%;
         height: auto;
       }
@@ -140,7 +156,7 @@ body {
     position: relative;
     display: inline-block;
     width: 50%;
-    min-height: 750px;
+    min-height: 830px;
     background-color: rgb(244, 245, 240);
 
     .my-skills {
@@ -162,12 +178,37 @@ body {
 
     }
     .skills-frontend {
+      margin-left: 30px;
       font-size: 28px;
       line-height: 28px;
       color: rgb(86, 99, 88);
     }
-    .skills-circkles {
+    .skills-circles {
+      margin-left: 30px;
       list-style: none;
+      .circle-wrap {
+        position: relative;
+        width: 125px;
+        height: 125px;
+        margin-right: 50px;
+        display: inline-block;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .circle-text {
+          width: 100px;
+          height: 50px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          white-space: normal;
+          color: rgb(116, 161, 99);
+        }
+      }
       circle {
         fill: rgba(0,0,0,0);
         stroke: #dfdcd5;
@@ -177,14 +218,9 @@ body {
       }
       circle:nth-child(2n) {
         fill: rgba(0,0,0,0);
-        stroke: #10c1a8;
+        stroke: rgb(116, 161, 99);
         stroke-width: 20;
       }
-
-      //li {
-      //  width: 20%;
-      //  display: inline;
-      //}
     }
   }
 

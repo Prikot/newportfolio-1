@@ -10,11 +10,11 @@ body {
 .promo {
   background: url('../img/back.png');
   background-repeat:  no-repeat;
-  background-size: 100% 600px;
+  background-size: 100% 500px;
   color: white;
 
   .box {
-    margin: 175px auto 25px auto;
+    margin: 158px auto 25px auto;
 
   }
 
@@ -198,19 +198,26 @@ body {
     margin: 0 auto;
     font-size: 0;
 
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+
     .arrow {
       position: absolute;
       left: 158px;
-      top: -100px;
+      top: 65px;
     }
 
     .small-demo-left {
       position: relative;
       width:50%;
       display: inline;
+      float: left;
 
       .small-demo-pic {
-        width: 360px;
+        max-width: 100%;
       }
 
     }
@@ -218,8 +225,10 @@ body {
       position: relative;
       width: 50%;
       display: inline;
+      float: left;
+
       .small-demo-pic {
-        width: 360px;
+        max-width: 100%;
 
       }
     }
