@@ -168,11 +168,23 @@ body {
     }
     .skills-circkles {
       list-style: none;
-
-      li {
-        width: 20%;
-        display: inline;
+      circle {
+        fill: rgba(0,0,0,0);
+        stroke: #dfdcd5;
+        stroke-width: 20;
+        stroke-dasharray: 314px 314px;
+        transition: .8s;
       }
+      circle:nth-child(2n) {
+        fill: rgba(0,0,0,0);
+        stroke: #10c1a8;
+        stroke-width: 20;
+      }
+
+      //li {
+      //  width: 20%;
+      //  display: inline;
+      //}
     }
   }
 
@@ -185,105 +197,74 @@ body {
   background-color: rgb(55, 62, 66);
 }
 
-.map {
+#map {
   width: 100%;
   height: 930px;
+}
+
+.footer-template {
+  width: 100%;
+  height: 150px;
+  color: white;
+  background-color: rgba(54, 61, 64, 0.6);
+  margin-top: -150px;
+
+  .left-part,
+  .right-part,
+  .center-part {
+    width: 33.2%;
+    display: inline-block;
+    border-right: 1px solid grey;
+    box-sizing: border-box;
+    margin-left: -2px;
+    padding-left: 32px;
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .center-part {
+    .nav-menu {
+      padding-left: 0;
+    }
+    .social-btns {
+      margin-bottom: 38px;
+      float: left;
+
+      a {
+        margin-right: 20px;
+        i.fa-vk,
+        i.fa-github-alt,
+        i.fa-linkedin {
+          color: white;
+          font-size: 28px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .right-part {
+    border-right: none;
+  }
+
+  .nav-menu {
+    list-style: none;
+    li {
+      display: inline;
+    }
+  }
 }
 
 .copyright {
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 40px;
   left: 0;
   bottom: 0;
-  margin-top: 200px;
+  margin-top: -70px;
   text-align: center;
+  background-color: rgba(98, 140, 83, 0.85);
+  line-height: 40px;
+  z-index: 10000;
 }
-
-.footer-template {
-    margin: 0;
-    padding: 0;
-    padding-top: 30px;
-    width: 100%;
-    height: 150px;
-    color: white;
-    background-color: rgba(54, 61, 64, .6);
-
-    p {
-      margin-top: 0;
-    }
-
-    &:after {
-      display: table;
-      clear: both;
-      content: "";
-    }
-
-    .left-part,
-    .right-part,
-    .center-part {
-      width: 33.2%;
-      display: inline-block;
-      border-right: 1px solid grey;
-      box-sizing: border-box;
-      margin-left: -2px;
-      padding-left: 32px;
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    .left-part {
-      .i-did {
-        width: 365px;
-      }
-    }
-
-
-    .center-part {
-
-      .nav-menu {
-        padding-left: 0;
-        margin-top: 0;
-        list-style: none;
-
-        li {
-          margin-right: 20px;
-          display: inline;
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-
-      &:after {
-        display: table;
-        clear: both;
-        content: "";
-      }
-
-      .social-btns {
-        float: left;
-
-        a {
-          margin-right: 20px;
-          i.fa-vk,
-          i.fa-github-alt,
-          i.fa-linkedin {
-            color: white;
-            font-size: 28px;
-            line-height: 28px;
-          }
-        }
-      }
-    }
-
-    .right-part {
-      border-right: none;
-      .quote {
-        p {
-          margin-top: 0;
-          padding: 0;
-        }
-      }
-    }
-  }

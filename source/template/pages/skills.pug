@@ -34,7 +34,7 @@ body
             h1.page-title Обо мне
               hr.horizontal-line
           .description-block
-            img(src='assets/img/fashmark-men-trends-nature1.png')
+            img(src='img/fashmark-men-trends-nature1.png')
             h2.description-block-title Кто я
               hr.horizontal-line
             p.skills-about-me Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi dignissimos distinctio eveniet modi necessitatibus odio pariatur perferendis possimus, reprehenderit sequi similique soluta temporibus ullam velit veritatis voluptas, voluptatibus.
@@ -43,8 +43,11 @@ body
             hr.horizontal-line
           p.my-skills-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatibus!
           h3.skills-frontend Frontend
-          ul.skills-circkles
-            li
+          .skills-circkles
+            .circle-wrap
+                svg.circle(width='120' height='120')
+                  circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
+                  circle(transform='rotate(-90)', style='stroke-dasharray: 250px 314px;', r='50', cx='-60', cy='60')
             li
             li
           h3.skills-frontend Backend
@@ -61,7 +64,7 @@ body
     #map
     .footer-template
       .left-part
-        p.i-did Это я сделал в рамках обучеlal la la la l alldlkjk dkdk ljljs lal la la la l alldlkjk dkdk ljljs ния в LoftSchool"
+        p.i-did Это я сделал в рамках обучения в LoftSchool"
       .center-part
         ul.nav-menu
           li Мои работы
@@ -79,9 +82,7 @@ body
         p.quote Lal lal la la la l alldlkjk dkdk ljljs sjhdshd
           span
             | - Who say
-
-
-
-<script type="text/javascript" src="assets/js/google_maps.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTR4SmCGot4Blf76TpDziAKP7-rHwts9A&callback=initMap">
+    .copyright Привет
+<script type="text/javascript" src="../source/js/google_maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRdSrcRsYDUhxGwIWIo_691ihwrHeRDs&callback=initMap">
 
