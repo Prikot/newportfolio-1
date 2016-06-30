@@ -91,7 +91,7 @@ body
                 svg.circle(width='120' height='120')
                   circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
                   circle(transform='rotate(-90)', style='stroke-dasharray: 90px 314px;', r='50', cx='-60', cy='60')
-      #map
+    #map
     .footer-template
       .left-part
         p.i-did Это я сделал в рамках обучения в LoftSchool"
@@ -113,5 +113,6 @@ body
           span
             | - Who say
     .copyright Привет
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRdSrcRsYDUhxGwIWIo_691ihwrHeRDs&callback=initMap">
+  script(src="assets/js/app.js")
+  script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRdSrcRsYDUhxGwIWIo_691ihwrHeRDs&callback=initMap')
 
