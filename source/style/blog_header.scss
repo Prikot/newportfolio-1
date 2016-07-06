@@ -1,0 +1,70 @@
+
+  .blog-header {
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+    .social-btns {
+      margin-bottom: 38px;
+      float: left;
+
+      a {
+        margin-right: 20px;
+        i.fa-vk,
+        i.fa-github-alt,
+        i.fa-linkedin {
+          color: white;
+          font-size: 28px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .avatar-block {
+    text-align: center;
+    height: 130px;
+
+    .photo {
+      border-radius: 50%;
+      width: 145px;
+      height: 145px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-size: 63px;
+      line-height: 63px;
+      //margin-bottom: 10px;
+      margin-top: 0;
+      color: white;
+
+
+    }
+    .horizontal-line {
+      background-color: white;
+      border: none;
+      width: 90px;
+      height: 3px;
+      margin-bottom: 30px;
+    }
+    .sitetitle {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 0;
+    }
+  }
+
+  .promo {
+    color: white;
+    .box {
+      height: 120px;
+      margin: 150px auto 0 auto;
+      z-index: 10000;
+    }
+    .triangle {
+      fill: rgb(250, 248, 240);
+    }
+  }

@@ -1,0 +1,47 @@
+.footer-template {
+  width: 100%;
+  height: 140px;
+  margin-top: -220px;
+  color: white;
+  background-color: rgba(54, 61, 64, 0.6); }
+  .footer-template .left-part,
+  .footer-template .right-part,
+  .footer-template .center-part {
+    width: 33.2%;
+    display: inline-block;
+    border-right: 1px solid grey;
+    box-sizing: border-box;
+    margin-left: -2px;
+    padding-left: 32px;
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 16px; }
+  .footer-template .center-part .nav-menu {
+    padding-left: 0; }
+  .footer-template .center-part .social-btns {
+    margin-bottom: 38px;
+    float: left; }
+    .footer-template .center-part .social-btns a {
+      margin-right: 20px; }
+      .footer-template .center-part .social-btns a i.fa-vk,
+      .footer-template .center-part .social-btns a i.fa-github-alt,
+      .footer-template .center-part .social-btns a i.fa-linkedin {
+        color: white;
+        font-size: 28px;
+        line-height: 28px; }
+  .footer-template .right-part {
+    border-right: none; }
+  .footer-template .nav-menu {
+    list-style: none; }
+    .footer-template .nav-menu li {
+      display: inline; }
+
+.copyright {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(98, 140, 83, 0.85);
+  line-height: 40px;
+  z-index: 10000; }
+
+/*# sourceMappingURL=footer.css.map */

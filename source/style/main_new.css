@@ -1,0 +1,14 @@
+body {
+  height: 100%;
+  background: none;
+  margin: 0; }
+
+.wrapper {
+  background: url("../img/back.png") no-repeat;
+  background-size: 100% 470px;
+  z-index: 10000; }
+
+.content {
+  margin-bottom: 200px; }
+
+/*# sourceMappingURL=main_new.css.map */

@@ -4,7 +4,7 @@ head
   meta(charset="UTF-8")
   meta(name="viewport",content="width=device-width")
   link(href="assets/css/normalize.css", rel="stylesheet")
-  link(href="assets/css/main.css", rel="stylesheet")
+  link(href="assets/css/main_OLD.css", rel="stylesheet")
   link(href="assets/css/skills.css", rel="stylesheet")
   link(rel='stylesheet', href='../bower_components/font-awesome/css/font-awesome.css')
 body
@@ -91,7 +91,19 @@ body
                 svg.circle(width='120' height='120')
                   circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
                   circle(transform='rotate(-90)', style='stroke-dasharray: 90px 314px;', r='50', cx='-60', cy='60')
-    #map
+    .map
+      .adress-form
+              h2.description-block-title Контакты
+                hr.horizontal-line
+              p.skype-contact
+                i.fa.fa-skype(aria-hidden="true") a.prikotov
+              p.email-contact
+                i.fa.fa-envelope(aria-hidden="true") a.prikotov@gmail.com
+              p.phone-contact
+                i.fa.fa-phone(aria-hidden="true") a.prikotov@gmail.com
+              p.adress-contact
+                i.fa.fa-phone(aria-hidden="true") a.prikotov@gmail.com
+      #map
     .footer-template
       .left-part
         p.i-did Это я сделал в рамках обучения в LoftSchool"
