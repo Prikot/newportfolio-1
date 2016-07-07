@@ -149,6 +149,7 @@
   margin-bottom: 36px;
   background-color: rgb(55, 62, 66);
 }
+
 .map {
   position: relative;
   #map {
@@ -159,7 +160,7 @@
   .adress-form {
     position: absolute;
     z-index: 100000;
-    top: 40%;
+    top: 30%;
     left: 35%;
     right: 0%;
     text-align: center;
@@ -174,4 +175,13 @@
       color: rgb(108, 156, 90);
     }
   }
+}
+
+.footer-template {
+  position: absolute;
+  bottom: 40px;
+}
+
+.copyright {
+  position: relative;
 }

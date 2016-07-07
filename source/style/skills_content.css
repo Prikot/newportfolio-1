@@ -122,7 +122,7 @@
   .map .adress-form {
     position: absolute;
     z-index: 100000;
-    top: 40%;
+    top: 30%;
     left: 35%;
     right: 0%;
     text-align: center;
@@ -134,5 +134,12 @@
     .map .adress-form .fa-envelope,
     .map .adress-form .fa-phone {
       color: #6c9c5a; }
+
+.footer-template {
+  position: absolute;
+  bottom: 40px; }
+
+.copyright {
+  position: relative; }
 
 /*# sourceMappingURL=skills_content.css.map */

@@ -1,22 +1,24 @@
 doctype html
 html(lang="en")
-head
-  meta(charset='UTF-8')
-  meta(content="" name="author")
-  meta(content="" name="description")
-  meta(content="" name="keywords")
-  meta(content="width=device-width, initial-scale=1" name="viewport")
-  meta(content="ie=edge" http-equiv="x-ua-compatible")
-  //link(rel='stylesheet' href='/assets/css/foundation.css')
-  //link(rel='stylesheet' href='/assets/css/app.css')
-  link(rel='stylesheet' href='assets/css/normalize.css')
-  link(href="assets/css/main.css", rel="stylesheet")
-  link(rel='stylesheet', href='../bower_components/font-awesome/css/font-awesome.css')
-  //script(src='/assets/js/foundation.js' defer)
-  //script(src='/assets/js/app.js' defer)
-  block link-css
-body
-  .wrapper
-    block page-header
-    block content
-    block footer
+  head
+    meta(charset='UTF-8')
+    meta(content="" name="author")
+    meta(content="" name="description")
+    meta(content="" name="keywords")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    //link(rel='stylesheet' href='/assets/css/foundation.css')
+    //link(rel='stylesheet' href='/assets/css/app.css')
+    link(rel='stylesheet' href='assets/css/normalize.css')
+    link(href="assets/css/main.css", rel="stylesheet")
+    link(rel='stylesheet', href='../bower_components/font-awesome/css/font-awesome.css')
+    script(src='assets/js/foundation.js' defer)
+    script(src='assets/js/app.js' defer)
+    block link-css
+  body
+    .wrapper
+      block page-header
+      block content
+      block footer
+    script(src='assets/js/app.js')
+    script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRdSrcRsYDUhxGwIWIo_691ihwrHeRDs&callback=initMap')
