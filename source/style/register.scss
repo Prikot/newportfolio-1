@@ -23,12 +23,10 @@ header {
   }
 }
 
-.hello-form {
-  display: none;
+.front {
   width: 380px;
   height: 400px;
   margin: 145px auto 0 auto;
-  text-align: center;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6);
 
@@ -108,11 +106,10 @@ header {
   }
 }
 
-.register-form {
+.back {
   width: 380px;
   height: 428px;
   margin: 145px auto 0 auto;
-  text-align: center;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6);
 
@@ -161,9 +158,9 @@ header {
     margin-bottom: 20px;
   }
 
-  label[for='captcha'],
+  label[for="captcha"],
   .captcha-question,
-  input[name='yesno'] {
+  input[name="yesno"] {
     color: white;
   }
 
@@ -201,7 +198,6 @@ header {
       background-color: rgb(96, 142, 84);
       font-size: 16px;
       text-align: center;
-      vertical-align: middle;
       padding-top: 16px;
     }
     .sign-in-btn {
@@ -224,3 +220,65 @@ footer {
 .register-hidden {
   display: none;
 }
+//переворот карточки
+
+label {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 380px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+label:hover .card {
+  -webkit-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+.card-rotate {
+  display: none;
+}
+
+:checked + .card {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+//label:hover :checked + .card {
+//  transform: rotateX(160deg);
+//  -webkit-transform: rotateX(160deg);
+//  box-shadow: 0 20px 20px rgba(255,255,255,.2);
+//}

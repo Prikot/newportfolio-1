@@ -6,7 +6,7 @@
   height: 60px;
   border: none;
   background-color: transparent;
-  z-index: 100;
+  z-index: 10001;
 }
 
 .sandw {
@@ -126,7 +126,7 @@
 }
 
 .screen-menu__container {
-  z-index: 10000;
+  z-index: 999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
