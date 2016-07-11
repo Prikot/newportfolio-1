@@ -19,49 +19,47 @@ header {
     padding: 14px 28px 14px 28px;
     border: 1px solid white; }
 
-.hello-form {
-  display: none;
+.front {
   width: 380px;
   height: 400px;
-  margin: 145px auto 0 auto;
-  text-align: center;
+  margin: 15vh auto 0 auto;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6); }
-  .hello-form .photo {
+  .front .photo {
     border-radius: 50%;
     width: 145px;
     height: 145px;
     margin-top: 40px;
     margin-bottom: 15px; }
-  .hello-form .name {
+  .front .name {
     color: white;
     font-size: 28px;
     line-height: 28px;
     margin-bottom: 10px;
     margin-top: 0; }
-  .hello-form .sitetitle {
+  .front .sitetitle {
     color: white;
     font-size: 16px;
     line-height: 16px;
     margin-top: 0;
     margin-bottom: 30px; }
-  .hello-form .social-btns {
+  .front .social-btns {
     margin-bottom: 38px; }
-    .hello-form .social-btns a {
+    .front .social-btns a {
       margin-right: 20px; }
-      .hello-form .social-btns a .fa-vk,
-      .hello-form .social-btns a .fa-github-alt,
-      .hello-form .social-btns a .fa-linkedin {
+      .front .social-btns a .fa-vk,
+      .front .social-btns a .fa-github-alt,
+      .front .social-btns a .fa-linkedin {
         color: rgba(141, 155, 150, 0.9);
         font-size: 28px;
         line-height: 28px; }
-  .hello-form .btns {
+  .front .btns {
     height: 50px;
     font-size: 0;
     text-align: left; }
-    .hello-form .btns .myworks,
-    .hello-form .btns .aboutme,
-    .hello-form .btns .blog {
+    .front .btns .myworks,
+    .front .btns .aboutme,
+    .front .btns .blog {
       display: inline-block;
       color: white;
       text-decoration: none;
@@ -74,72 +72,74 @@ header {
       text-align: center;
       vertical-align: middle;
       padding-top: 16px; }
-    .hello-form .btns .blog {
+    .front .btns .blog {
       width: 100px;
       border-right: none; }
-    .hello-form .btns .myworks {
+    .front .btns .myworks {
       width: 150px; }
-    .hello-form .btns .aboutme {
+    .front .btns .aboutme {
       width: 130px; }
 
-.register-form {
+.back {
   width: 380px;
   height: 428px;
-  margin: 145px auto 0 auto;
-  text-align: center;
+  margin: 15vh auto 0 auto;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6); }
-  .register-form .name {
+  .back .name {
     padding-top: 40px;
     margin-bottom: 25px;
     font-size: 28px;
     line-height: 28px;
     color: white; }
-  .register-form .horizontal-line {
+  .back .horizontal-line {
     border: none;
     width: 90px;
     height: 3px;
     margin-bottom: 30px;
     background-color: white; }
-  .register-form .register-form-login,
-  .register-form .register-form-pass,
-  .register-form .captcha-question {
+  .back .register-form-login,
+  .back .register-form-pass,
+  .back .captcha-question {
     display: block;
     font-size: 16px; }
-  .register-form input, .register-form label {
+  .back input, .back label {
     font-size: 16px; }
-  .register-form .register-form-login,
-  .register-form .register-form-pass {
-    width: 340px;
+  .back .register-form-login,
+  .back .register-form-pass {
+    width: 320px;
     height: 45px;
     margin: 0 auto;
     border-radius: 20px;
     font-size: 16px;
     line-height: 45px;
     border: none;
-    padding: 0; }
-  .register-form .register-form-login {
+    padding: 0 0 0 20px;
+    outline: none; }
+  .back .register-form-login {
     margin-bottom: 20px; }
-  .register-form .register-form-pass {
+  .back .register-form-pass {
     margin-bottom: 20px; }
-  .register-form label[for='captcha'],
-  .register-form .captcha-question,
-  .register-form input[name='yesno'] {
+  .back label[for="captcha"],
+  .back .captcha-question {
     color: white; }
-  .register-form label[for='captcha'] {
+  .back label[for="yes-in"],
+  .back label[for="no-in"] {
+    color: white; }
+  .back label[for='captcha'] {
     margin-bottom: 20px; }
-  .register-form .captcha-question {
+  .back .captcha-question {
     margin-bottom: 20px; }
-  .register-form input[name='yesno'] {
+  .back input[name='yesno'] {
     margin-bottom: 40px; }
-  .register-form #captcha {
+  .back #captcha {
     margin-bottom: 20px; }
-  .register-form .btns {
+  .back .btns {
     height: 50px;
     font-size: 0;
     text-align: left; }
-    .register-form .btns .main-page-btn,
-    .register-form .btns .sign-in-btn {
+    .back .btns .main-page-btn,
+    .back .btns .sign-in-btn {
       display: inline-block;
       color: white;
       text-decoration: none;
@@ -151,9 +151,8 @@ header {
       background-color: #608e54;
       font-size: 16px;
       text-align: center;
-      vertical-align: middle;
       padding-top: 16px; }
-    .register-form .btns .sign-in-btn {
+    .back .btns .sign-in-btn {
       border-right: none; }
 
 footer {
@@ -165,7 +164,44 @@ footer {
   color: white;
   text-align: center; }
 
-.register-hidden {
+.flip-card {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 380px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer; }
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20; }
+
+.card > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.card-rotate {
   display: none; }
+
+:checked + .card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); }
 
 /*# sourceMappingURL=register.css.map */

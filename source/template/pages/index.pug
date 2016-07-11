@@ -13,7 +13,7 @@ body
     a.autorize-btn(href="#") Авторизоваться
   .wrapper
     .content
-      label
+      label.flip-card
         input.card-rotate(type='checkbox')
         .card
           .front
@@ -40,10 +40,12 @@ body
               input#captcha(type='checkbox')
               | Я человек
             p.captcha-question Вы точно не робот?
-            input(type='radio', name='yesno', value='1')
-            | Да
-            input(type='radio', name='yesno', value='0')
-            | Не уверен
+            label(for='yes-in')
+              input#yes-in(type='radio', name='yesno', value='1')
+              | Да
+            label(for='no-in')
+              input#no-in(type='radio', name='yesno', value='0')
+              | Не уверен
             .btns
               .main-page-btn На главную
               .sign-in-btn Войти

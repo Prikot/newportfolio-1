@@ -26,7 +26,7 @@ header {
 .front {
   width: 380px;
   height: 400px;
-  margin: 145px auto 0 auto;
+  margin: 15vh auto 0 auto;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6);
 
@@ -109,7 +109,7 @@ header {
 .back {
   width: 380px;
   height: 428px;
-  margin: 145px auto 0 auto;
+  margin: 15vh auto 0 auto;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6);
 
@@ -141,14 +141,15 @@ header {
 
   .register-form-login,
   .register-form-pass {
-    width: 340px;
+    width: 320px;
     height: 45px;
     margin: 0 auto;
     border-radius: 20px;
     font-size: 16px;
     line-height: 45px;
     border: none;
-    padding: 0;
+    padding: 0 0 0 20px;
+    outline: none;
   }
 
   .register-form-login {
@@ -159,9 +160,15 @@ header {
   }
 
   label[for="captcha"],
-  .captcha-question,
-  input[name="yesno"] {
+  .captcha-question {
     color: white;
+  }
+
+
+  label[for="yes-in"],
+  label[for="no-in"] {
+    color: white;
+
   }
 
   label[for='captcha'] {
@@ -217,12 +224,9 @@ footer {
 }
 
 
-.register-hidden {
-  display: none;
-}
 //переворот карточки
 
-label {
+.flip-card {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   -webkit-transform-style: preserve-3d;
@@ -230,11 +234,8 @@ label {
   display: block;
   width: 380px;
   height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -249,7 +250,7 @@ label {
   z-index: 20;
 }
 
-.card div {
+.card>div {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -258,14 +259,8 @@ label {
 }
 
 .card .back {
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-}
-
-label:hover .card {
-  -webkit-transform: rotateX(20deg);
-  transform: rotateX(20deg);
-  box-shadow: 0 20px 20px rgba(50,50,50,.2);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card-rotate {
@@ -273,12 +268,6 @@ label:hover .card {
 }
 
 :checked + .card {
-  transform: rotateX(180deg);
-  -webkit-transform: rotateX(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
-
-//label:hover :checked + .card {
-//  transform: rotateX(160deg);
-//  -webkit-transform: rotateX(160deg);
-//  box-shadow: 0 20px 20px rgba(255,255,255,.2);
-//}

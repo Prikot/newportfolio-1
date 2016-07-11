@@ -121,7 +121,7 @@
     height: 930px; }
   .map .adress-form {
     position: absolute;
-    z-index: 100000;
+    z-index: 9000;
     top: 30%;
     left: 35%;
     right: 0%;

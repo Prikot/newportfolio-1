@@ -6,7 +6,7 @@
   height: 60px;
   border: none;
   background-color: transparent;
-  z-index: 100; }
+  z-index: 10001; }
 
 .sandw {
   display: block;
@@ -73,7 +73,8 @@
   right: 0;
   bottom: 0;
   text-align: center;
-  display: none; }
+  display: none;
+  z-index: 10000; }
   .screen-menu:before, .screen-menu:after {
     content: "";
     display: block;
@@ -102,7 +103,7 @@
     -o-animation-fill-mode: forwards; }
 
 .screen-menu__container {
-  z-index: 10;
+  z-index: 999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -186,5 +187,10 @@
     transform: translateX(-100%); }
   to {
     transform: translateX(0); } }
+.header-about__menu {
+  outline: none; }
+
+.screen-menu__link {
+  text-decoration: none; }
 
 /*# sourceMappingURL=menu.css.map */

@@ -6,6 +6,7 @@ html {
       min-height: 100%;
       padding: 0;
       margin: 0;
+      z-index: -1;
 
       .wrapper {
         min-height: 100%;
@@ -17,11 +18,13 @@ html {
       clear: both;
       content: "";
       }
+
     }
     p {
       margin: 0;
       padding: 0;
     }
+
 }
 
 

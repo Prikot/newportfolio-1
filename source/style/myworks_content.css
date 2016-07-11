@@ -1,4 +1,5 @@
 .my-work {
+  z-index: 10;
   background-image: url("../img/form_back.png");
   background-position-y: -600px; }
   .my-work:after {
@@ -8,7 +9,8 @@
   .my-work .page-title {
     text-align: center;
     font-size: 63px;
-    line-height: 63px; }
+    line-height: 63px;
+    z-index: 11; }
   .my-work .horizontal-line {
     border: none;
     background-color: black;
@@ -25,22 +27,14 @@
     .my-work .works-block .description {
       float: left;
       position: relative;
-      display: inline-block;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
       width: 50%;
       min-height: 750px;
       background-color: #ebefe2; }
       .my-work .works-block .description .description-inner {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        bottom: 50%;
-        text-align: center; }
-        .my-work .works-block .description .description-inner:before {
-          height: 100%;
-          content: "";
-          display: inline-block;
-          vertical-align: middle; }
+        display: inline-block; }
         .my-work .works-block .description .description-inner .work-title {
           width: 360px;
           margin: 0 auto;
