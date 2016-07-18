@@ -1,7 +1,8 @@
-
 .promo {
-  color: white; }
-  .promo .down-arrow {
+  color: white;
+  background: url("../img/back.png") no-repeat;
+  -o-background-size: cover; }
+  .promo .avatar__down-arrow {
     display: block;
     text-align: center;
     margin: 0 auto; }
@@ -21,34 +22,34 @@
     display: table;
     clear: both;
     content: ""; }
-  .myworks-header .social-btns {
+  .myworks-header .socials {
     margin-bottom: 38px;
     float: left; }
-    .myworks-header .social-btns a {
+    .myworks-header .socials a {
       margin-right: 20px; }
-      .myworks-header .social-btns a i.fa-vk,
-      .myworks-header .social-btns a i.fa-github-alt,
-      .myworks-header .social-btns a i.fa-linkedin {
+      .myworks-header .socials a i.fa-vk,
+      .myworks-header .socials a i.fa-github-alt,
+      .myworks-header .socials a i.fa-linkedin {
         color: white;
         font-size: 28px;
         line-height: 28px; }
 
-.avatar-block {
+.avatar {
   text-align: center;
   color: white;
   height: 80px; }
-  .avatar-block .photo {
+  .avatar .avatar__photo {
     border-radius: 50%;
     width: 145px;
     height: 145px;
     margin-top: 40px;
     margin-bottom: 15px; }
-  .avatar-block .name {
+  .avatar .avatar__name {
     font-size: 28px;
     line-height: 28px;
     margin-bottom: 10px;
     margin-top: 0; }
-  .avatar-block .sitetitle {
+  .avatar .avatar__site-title {
     font-size: 16px;
     line-height: 16px;
     margin-top: 0;

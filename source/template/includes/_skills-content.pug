@@ -1,19 +1,19 @@
 .content
   .skills
     .content-left
-      .aboutme-block
-        h1.page-title Обо мне
+      .aboutme
+        h1.aboutme__title Обо мне
           hr.horizontal-line
-      .description-block
-        img(src='assets/img/fashmark-men-trends-nature1.png')
-        h2.description-block-title Кто я
+      .aboutme-description
+        img.aboutme-description__image(src='assets/img/fashmark-men-trends-nature1.png')
+        h2.aboutme-description__title Кто я
           hr.horizontal-line
-        p.skills-about-me Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi dignissimos distinctio eveniet modi necessitatibus odio pariatur perferendis possimus, reprehenderit sequi similique soluta temporibus ullam velit veritatis voluptas, voluptatibus.
-    .content-right
-      h2.my-skills Чем я могу быть вам полезен
+        p.aboutme-description__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi dignissimos distinctio eveniet modi necessitatibus odio pariatur perferendis possimus, reprehenderit sequi similique soluta temporibus ullam velit veritatis voluptas, voluptatibus.
+    .content-right.skills-items
+      h2.skills-items__title Чем я могу быть вам полезен
         hr.horizontal-line
-      p.my-skills-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatibus!
-      h3.skills-frontend Frontend
+      p.skills-items__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatibus!
+      h3.skills-items__section-title Frontend
       .skills-circles
         .circle-wrap
           svg.circle(width='120' height='120')
@@ -30,7 +30,7 @@
             circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
             circle(transform='rotate(-90)', style='stroke-dasharray: 200px 314px;', r='50', cx='-60', cy='60')
           span.circle-text JavaScript & JQuery
-      h3.skills-frontend Backend
+      h3.skills-items__section-title Backend
       .skills-circles
         .circle-wrap
           svg.circle(width='120' height='120')
@@ -48,7 +48,7 @@
           svg.circle(width='120' height='120')
             circle(transform='rotate(-90)', r='50', cx='-60', cy='60')
             circle(transform='rotate(-90)', style='stroke-dasharray: 90px 314px;', r='50', cx='-60', cy='60')
-      h3.skills-frontend Workflow
+      h3.skills-items__section-title Workflow
       .skills-circles
         .circle-wrap
           svg.circle(width='120' height='120')
