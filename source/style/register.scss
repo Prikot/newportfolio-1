@@ -1,3 +1,16 @@
+.real-bg {
+  width: 100%;
+  height: 120%;
+  background: url('../img/back.png') 0 0 no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 header {
   width: 100%;
   padding: 0;
@@ -24,7 +37,7 @@ header {
 }
 
 .front {
-  width: 380px;
+  width: 35%;
   height: 400px;
   margin: 15vh auto 0 auto;
   text-align: center;
@@ -107,7 +120,7 @@ header {
 }
 
 .back {
-  width: 380px;
+  width: 35%;
   height: 428px;
   margin: 15vh auto 0 auto;
   text-align: center;
