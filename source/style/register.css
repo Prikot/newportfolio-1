@@ -1,6 +1,10 @@
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px; }
+
 .real-bg {
   width: 100%;
-  height: 120%;
+  height: 100%;
   background: url("../img/back.png") 0 0 no-repeat;
   background-position: center top;
   -webkit-background-size: cover;
@@ -34,7 +38,7 @@ header {
 .front {
   width: 35%;
   height: 400px;
-  margin: 15vh auto 0 auto;
+  margin: 110px auto 0 auto;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6); }
   .front .photo {
@@ -95,7 +99,7 @@ header {
 .back {
   width: 35%;
   height: 428px;
-  margin: 15vh auto 0 auto;
+  margin: 110px auto 0 auto;
   text-align: center;
   background-color: rgba(31, 52, 48, 0.6); }
   .back .name {
@@ -115,37 +119,111 @@ header {
   .back .captcha-question {
     display: block;
     font-size: 16px; }
+  .back .register-form-login-fa {
+    background-color: #f0efe9;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 20px;
+    right: 0;
+    line-height: 45px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px; }
+  .back .fa-user,
+  .back .fa-key {
+    color: #c4cbcd; }
   .back input, .back label {
     font-size: 16px; }
-  .back .register-form-login,
-  .back .register-form-pass {
-    width: 320px;
+  .back .register-form-login__input,
+  .back .register-form-pass__input {
+    width: 285px;
     height: 45px;
-    margin: 0 auto;
-    border-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     font-size: 16px;
     line-height: 45px;
     border: none;
+    margin-left: 35px;
     padding: 0 0 0 20px;
     outline: none; }
   .back .register-form-login {
+    margin: 0 auto;
     margin-bottom: 20px; }
   .back .register-form-pass {
+    margin: 0 auto;
     margin-bottom: 20px; }
+  .back #yes-in:not(checked),
+  .back #no-in:not(checked) {
+    position: absolute;
+    top: 0;
+    left: -9999px; }
+  .back #captcha:not(checked) {
+    display: none; }
   .back label[for="captcha"],
   .back .captcha-question {
     color: white; }
+  .back label[for="captcha"] {
+    line-height: 20px; }
+  .back label[for="captcha"]:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: #6c9c5a; }
+  .back .captcha-checkbox {
+    margin-bottom: 20px;
+    margin-top: 10px; }
+  .back #captcha:checked + label:before {
+    content: "\2713";
+    padding: 0;
+    color: whitesmoke;
+    text-align: center; }
   .back label[for="yes-in"],
   .back label[for="no-in"] {
-    color: white; }
+    color: white;
+    padding-left: 25px; }
+  .back .captcha-question-radio {
+    margin-bottom: 40px;
+    height: 20px; }
+  .back label[for="yes-in"]:before,
+  .back label[for="no-in"]:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white; }
+  .back .captcha-question-radio input[type="radio"]:checked + label:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: #6c9c5a; }
   .back label[for='captcha'] {
     margin-bottom: 20px; }
   .back .captcha-question {
     margin-bottom: 20px; }
   .back input[name='yesno'] {
     margin-bottom: 40px; }
-  .back #captcha {
-    margin-bottom: 20px; }
   .back .btns {
     height: 50px;
     font-size: 0;
@@ -168,11 +246,8 @@ header {
       border-right: none; }
 
 footer {
-  position: absolute;
   width: 100%;
   height: 50px;
-  left: 0;
-  bottom: 0;
   color: white;
   text-align: center; }
 
@@ -212,7 +287,7 @@ footer {
 .card-rotate {
   display: none; }
 
-:checked + .card {
+.card-rotate:checked + .card {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg); }
 

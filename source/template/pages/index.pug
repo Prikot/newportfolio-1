@@ -9,45 +9,57 @@ head
   link(rel='stylesheet', href='../bower_components/font-awesome/css/font-awesome.css')
 
 body
-  .real-bg
-  header
-    a.autorize-btn(href="#") Авторизоваться
   .wrapper
-      label.flip-card
-        input.card-rotate(type='checkbox')
-        .card
-          .front
-            img.photo(src="img/", alt="Logo")
-            p.name Александр Прикотов
-            p.sitetitle Личный сайт веб-разработчика
-            .social-btns
-              a.vk(href="#")
-                i.fa.fa-vk(aria-hidden="true")
-              a.git(href="#")
-                i.fa.fa-github-alt(aria-hidden="true")
-              a.in(href="#")
-                i.fa.fa-linkedin(aria-hidden="true")
-            .btns
-              a.myworks(href='myworks-new.html') Мои работы
-              a.aboutme(href='skills-new.html') Обо мне
-              a.blog(href='./blog-new.html') Блог
-          .back
-            p.name Авторизуйтесь
-              hr.horizontal-line
-            input.register-form-login(type='text', placeholder='Логин')
-            input.register-form-pass(type='password', placeholder='Пароль')
+    .real-bg
+    header
+      a.autorize-btn(href="#") Авторизоваться
+    label.flip-card
+      input.card-rotate(type='checkbox')
+      .card
+        .front
+          img.photo(src="img/", alt="Logo")
+          p.name Александр Прикотов
+          p.sitetitle Личный сайт веб-разработчика
+          .social-btns
+            a.vk(href="#")
+              i.fa.fa-vk(aria-hidden="true")
+            a.git(href="#")
+              i.fa.fa-github-alt(aria-hidden="true")
+            a.in(href="#")
+              i.fa.fa-linkedin(aria-hidden="true")
+          .btns
+            a.myworks(href='myworks-new.html') Мои работы
+            a.aboutme(href='skills-new.html') Обо мне
+            a.blog(href='./blog-new.html') Блог
+        .back
+          p.name Авторизуйтесь
+            hr.horizontal-line
+          .register-form-login
+            .register-form-login-fa
+              i.fa.fa-user
+            label.register-form-login__label
+              input.register-form-login__input(type='text', placeholder='Логин')
+          .register-form-pass
+            .register-form-login-fa
+              i.fa.fa-key
+            label.register-form-pass__label
+              input.register-form-pass__input(type='password', placeholder='Пароль')
+          .captcha-checkbox
+            input#captcha(type='checkbox')
             label(for='captcha')
-              input#captcha(type='checkbox')
               | Я человек
-            p.captcha-question Вы точно не робот?
+          p.captcha-question Вы точно не робот?
+          .captcha-question-radio
+            input#yes-in(type='radio', name='yesno', value='1')
             label(for='yes-in')
-              input#yes-in(type='radio', name='yesno', value='1')
               | Да
+            input#no-in(type='radio', name='yesno', value='0')
             label(for='no-in')
-              input#no-in(type='radio', name='yesno', value='0')
               | Не уверен
-            .btns
-              .main-page-btn На главную
-              .sign-in-btn Войти
+          .btns
+            .main-page-btn На главную
+            .sign-in-btn Войти
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+  script(src="assets/js/app.js")
   footer
     p.copyright Секретный ингредиент: чуточка любви!
