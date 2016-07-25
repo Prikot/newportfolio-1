@@ -1,6 +1,5 @@
 (function() {
   'use strict';
- $ = JQuery;
 
   var authModule = (function () {
     var authBtn = $('.autorize-btn'),

@@ -136,8 +136,7 @@
       color: #6c9c5a; }
 
 .footer-template {
-  position: absolute;
-  bottom: 40px; }
+  position: relative; }
 
 .copyright {
   position: relative; }
