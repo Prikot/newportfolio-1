@@ -29,4 +29,7 @@
       .blog .blog-content li .blog-content-text {
         margin: 0; }
 
+.fixed {
+  position: fixed; }
+
 /*# sourceMappingURL=blog_content.css.map */

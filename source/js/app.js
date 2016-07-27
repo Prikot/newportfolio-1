@@ -1,3 +1,48 @@
+// .static        -> .blog
+// .menu          -> .blog-nav
+// .menu__wrapper -> .blog-menu
+
+$(window).scroll(function() {
+  var
+      wScroll = $(window).scrollTop(),
+      menu = $('.blog .blog-nav'),
+      sidebar = $('.static .blog-menu'),
+      stickyStart = sidebar.offset().top,
+      menuClone = sidebar.clone(),
+      fixedSidebar = $('.fixed .left__col');
+
+  if (wScroll >= stickyStart) {
+
+
+    if (!fixedSidebar.find('.blog-menu').length) {
+      fixedSidebar.append(menuClone);
+      menu.hide();
+    }
+
+
+  } else {
+    fixedSidebar.find('.blog-menu').remove();
+    menu.show();
+  }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 (function() {
   'use strict';
 

@@ -115,11 +115,12 @@
 
 
         .circle-text {
-          width: 100px;
-          height: 50px;
+          width: auto;
+          font-size: 14px;
+          /* height: 50px; */
           position: absolute;
-          left: 0;
-          top: 0;
+          left: 20%;
+          top: 36%;
           bottom: 0;
           right: 0;
           white-space: normal;
