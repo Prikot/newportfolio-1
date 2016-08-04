@@ -1,12 +1,59 @@
+// blog
+// .sidebar =
 // .static        -> .blog
 // .menu          -> .blog-nav
 // .menu__wrapper -> .blog-menu
+//
+
+//.blog-side --> .blog-menu
+
+
+var sidebar = $('.left__col'),
+    menu = $('.blog-menu'),
+    windowMargin = 60;
+
+var menuFixedContainer = '<div class="fixed-blog-side">\
+    <div class="container">\
+    <div class="fixed-blog-side__left"></div>\
+    <div class="fixed-blog-side__right"></div>\
+    </div>\
+    </div>';
+
+function stickIt(wScroll) {
+  var stickyStart = sidebar.offset().top;
+  if(wScroll >= stickyStart) {
+    if(!$('.fixed-blog-side').length) {
+      sidebar.append(menuFixedContainer);
+
+      var fixedMenu = $('.fixed-blog-side'),
+          menuContainer = fixedMenu.find('fixed-blog-side__left'),
+          menuClone = menu.clone();
+
+      fixedMenu.css('top', windowMargin);
+      menuContainer.append(menuClone);
+      menu.hide();
+    } else {
+      $('.fixed-blog-side').remove();
+      menu.show();
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
 
 $(window).scroll(function() {
   var
       wScroll = $(window).scrollTop(),
       menu = $('.blog .blog-nav'),
-      sidebar = $('.static .blog-menu'),
+      sidebar = $('.blog .blog-menu'),
       stickyStart = sidebar.offset().top,
       menuClone = sidebar.clone(),
       fixedSidebar = $('.fixed .left__col');
