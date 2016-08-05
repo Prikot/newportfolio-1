@@ -6,10 +6,10 @@
 //
 
 //.blog-side --> .blog-menu
+'use strict';
 
-
-var sidebar = $('.left__col'),
-    menu = $('.blog-menu'),
+var sidebar = $('.blog-menu'),
+    menu = $('.blog-nav'),
     windowMargin = 60;
 
 var menuFixedContainer = '<div class="fixed-blog-side">\
@@ -20,13 +20,14 @@ var menuFixedContainer = '<div class="fixed-blog-side">\
     </div>';
 
 function stickIt(wScroll) {
-  var stickyStart = sidebar.offset().top;
+  'use strict';
+  var stickyStart = sidebar.offset().top - windowMargin;
   if(wScroll >= stickyStart) {
     if(!$('.fixed-blog-side').length) {
       sidebar.append(menuFixedContainer);
 
       var fixedMenu = $('.fixed-blog-side'),
-          menuContainer = fixedMenu.find('fixed-blog-side__left'),
+          menuContainer = fixedMenu.find('.fixed-blog-side__left'),
           menuClone = menu.clone();
 
       fixedMenu.css('top', windowMargin);
@@ -41,37 +42,9 @@ function stickIt(wScroll) {
 
 }
 
-
-
-
-
-
-
-
-
 $(window).scroll(function() {
-  var
-      wScroll = $(window).scrollTop(),
-      menu = $('.blog .blog-nav'),
-      sidebar = $('.blog .blog-menu'),
-      stickyStart = sidebar.offset().top,
-      menuClone = sidebar.clone(),
-      fixedSidebar = $('.fixed .left__col');
-
-  if (wScroll >= stickyStart) {
-
-
-    if (!fixedSidebar.find('.blog-menu').length) {
-      fixedSidebar.append(menuClone);
-      menu.hide();
-    }
-
-
-  } else {
-    fixedSidebar.find('.blog-menu').remove();
-    menu.show();
-  }
-
+  var wScroll = $(window).scrollTop();
+  stickIt(wScroll);
 });
 
 
@@ -79,6 +52,37 @@ $(window).scroll(function() {
 
 
 
+
+// $(window).scroll(function() {
+//   var
+//       wScroll = $(window).scrollTop(),
+//       menu = $('.blog .blog-nav'),
+//       sidebar = $('.blog .blog-menu'),
+//       stickyStart = sidebar.offset().top,
+//       menuClone = sidebar.clone(),
+//       fixedSidebar = $('.fixed .left__col');
+//
+//   if (wScroll >= stickyStart) {
+//
+//
+//     if (!fixedSidebar.find('.blog-menu').length) {
+//       fixedSidebar.append(menuClone);
+//       menu.hide();
+//     }
+//
+//
+//   } else {
+//     fixedSidebar.find('.blog-menu').remove();
+//     menu.show();
+//   }
+//
+// });
+//
+//
+//
+//
+//
+//
 
 
 
