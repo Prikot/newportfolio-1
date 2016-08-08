@@ -14,13 +14,13 @@ html(lang="en")
     link(href="assets/css/menu.css", rel="stylesheet")
     link(href="assets/css/footer.css", rel="stylesheet")
     link(rel='stylesheet', href='../bower_components/font-awesome/css/font-awesome.css')
-    script(src='assets/js/foundation.js' defer)
-    script(src='assets/js/app.js' defer)
     block link-css
   body
     .wrapper
       block page-header
       block content
       block footer
+    //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(src='assets/js/foundation.js')
     script(src='assets/js/app.js')
     script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRdSrcRsYDUhxGwIWIo_691ihwrHeRDs&callback=initMap')
